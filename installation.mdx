@@ -34,6 +34,10 @@ Here is a list from the most commons vps providers.
 - [AWS](https://aws.amazon.com/ec2/pricing/)
 
 
+### Requirements 
+
+To have a nice experience with Dokploy, it is necessary to have at least 2GB of Ram and 30GB of Disk, because Dokploy runs with docker, and when docker run the build it consume more resources so in order to prevent the freeze we suggest to have at least 2GB of Ram and 30GB of Disk.
+
 #### Suggestion
 
 
@@ -60,7 +64,7 @@ There is guide to set up SSH on your server.
 If you are already logged in to your server. You can use the following command:
 
 ```bash
-curl -sSL https://get.dokploy.com | sh
+curl -sSL https://dokploy.com/install.sh | sh
 ```
 
 This command will make the following things:
@@ -75,3 +79,10 @@ When the command is done, you can start using Dokploy.
 By simply type in the browser `your-ip-from-your-vps:3000` and you will be able to access Dokploy trought the internet.
 
 and then you will see this screen which you can configure the admin account.
+
+
+    <img
+    className="hidden dark:block"
+    src="/images/setup.png"
+    alt="Hero Dark"
+    />

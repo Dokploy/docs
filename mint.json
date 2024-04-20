@@ -61,7 +61,7 @@
       "group": "Get Started",
       "pages": [
         "introduction",
-        "Installation",
+        "installation",
         "development"
       ]
     },
