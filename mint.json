@@ -9,16 +9,16 @@
   "metadata": {
     "og:site_name": "Dokploy Documentation",
     "og:description": "Effortless deployment solution",
-    "og:title": "Coolify Documentation",
+    "og:title": "Dokploy Documentation",
     "og:url": "https://docs.dokploy.com",
     "og:locale": "en_US",
-    "og:image":  "/logo/logo.png",
+    "og:image":  "/logo/og.png",
     "twitter:title": "Dokploy Documentation",
     "twitter:description": "Effortless deployment solution",
     "twitter:url": "https://twitter.com/dokploy",
     "twitter:site": "@dokploy"
   },
-  "favicon": "/favicon.png",
+  "favicon": "/favicon.svg",
   "colors": {
     "background": {
       "dark": "#000000"
