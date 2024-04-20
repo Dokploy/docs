@@ -1,0 +1,58 @@
+---
+title: 'Web Domain Setup'
+description: 'Learn how to setup a main domain to dokploy panel'
+---
+
+## Introduction
+
+This section will cover the basic setup of a main domain.
+
+## Requirements
+
+First off is required to have a domain purchased.
+
+You can use the following domains providers to purchase a domain, they are around between 2 and 20$/year.
+
+- [Namecheap](https://www.namecheap.com/domains/)
+- [Name.com](https://www.name.com/)
+- [GoDaddy](https://www.godaddy.com/)
+- [Domain.com](https://www.domain.com/)
+
+
+## Transfer Setup
+
+Our suggest when you buy a domain is transfer your domain to Cloudflare.
+
+this give advanced security, protection and advanced tools.
+
+Here is a guide to transfer your domain to Cloudflare.
+
+- [Transfer Domain to Cloudflare](https://developers.cloudflare.com/registrar/get-started/transfer-domain-to-cloudflare/)
+
+## DNS Setup
+
+We will use [Cloudflare](https://www.cloudflare.com/) as our DNS provider, since provides the most secure and reliable DNS provider, but you can use any DNS provider.
+
+Log in to your account and go to `Websites` -> `Click on your domain` -> `DNS` -> `Records`.
+
+Then click on `Add record` and select `A`. 
+
+In name field type in your domain name and in value field type in your IP address.
+
+Example: let's suppose your domain is `dokploy.com` and your IP address is `1.2.3.4`.
+
+and you want your panel be under `web.dokploy.com`, then type `web` in name field and `1.2.3.4` in value field and click on `Save`.
+
+So your final record will be `web.dokploy.com`.
+
+<Frame>
+  <img src="/images/web-domain-setup/domain-setup.png" style={{ borderRadius: '0.5rem' }} />
+</Frame>
+
+## Dokploy Panel Setup
+
+Go to to your panel and log in with your credentials and go to `/dashboard?tab=settings` route and go to Server domain and set the exact same domain that you set in Cloudflare, click save give them like 20 seconds and go to `https://web.dokploy.com`.
+
+<Frame>
+  <img src="/images/web-domain-setup/dokploy-domain.png" style={{ borderRadius: '0.5rem' }} />
+</Frame>

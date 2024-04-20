@@ -2,8 +2,8 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "Dokploy",
   "logo": {
-    "dark": "/logo/group 24.png",
-    "light": "/logo/group 23.png",
+    "dark": "/logo/logo.png",
+    "light": "/logo/logo.png",
     "href": "https://dokploy.com"
   },
   "favicon": "/favicon.svg",
@@ -33,12 +33,7 @@
     "name": "Website",
     "url": "https://dokploy.com"
   },
-  "tabs": [
-    {
-      "name": "API Reference",
-      "url": "api-reference"
-    }
-  ],
+  
   "anchors": [
     {
       "name": "Documentation",
@@ -62,32 +57,42 @@
       "pages": [
         "introduction",
         "installation",
-        "development"
+        "uninstall"
       ]
     },
     {
-      "group": "Essentials",
+      "group": "Domain",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        "domains/web-domain-setup",
+        "domains/application-setup"
       ]
     },
     {
-      "group": "API Documentation",
+      "group": "Application",
       "pages": [
-        "api-reference/introduction"
+        "applications/create",
+        "applications/build-type",
+        "applications/examples"
       ]
     },
     {
-      "group": "Endpoint Examples",
+      "group": "Databases",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "databases/create",
+        "databases/backups"
+      ]
+    },
+    {
+      "group": "Traefik",
+      "pages": [
+        "traefik/manage",
+        "traefik/backups"
+      ]
+    },
+    {
+      "group": "Troubleshooting",
+      "pages": [
+        "troubleshooting/migrations"
       ]
     }
   ],

@@ -1,0 +1,31 @@
+---
+title: 'Application Domain Setup'
+description: 'Learn how to setup a domain to application'
+---
+
+## Introduction
+
+This section will cover the basic setup application domain.
+
+## Requirements
+
+If you don't have a domain go to `Web Domain Setup` section.
+
+## Create DNS Record
+
+Add a `A` record to your domain and name set the name of route you want to point and in the value field type `1.2.3.4` .
+
+## Application domain setup
+
+Go to any application and go to `Domains` tab and click on `Add Domain`, and simply type the record you created in the previous step.
+
+<Info>
+    Container Port: Set the port where your application is running.
+</Info>
+
+Give them 20-30 seconds to traefik generate the certificate and be able to access your application through your domain.
+
+<Frame>
+    <img src="/images/application-domain-setup/app-setup-domain.png" style={{ borderRadius: '0.5rem' }} />
+</Frame>
+

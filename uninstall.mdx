@@ -1,0 +1,32 @@
+---
+title: 'Uninstall'
+description: 'Learn how to uninstall Dokploy on your server'
+---
+
+{/* <Info>
+  **Prerequisite** You should have installed Node.js (version 18.10.0 or
+  higher).
+</Info> */}
+
+Step 1. Remover Docker Swarm Services on your OS:
+
+
+
+```bash
+docker service rm dokploy dokploy-traefik dokploy-postgres dokploy-redis
+```
+
+Step 2. Remove Docker Volumes:
+
+```bash
+docker volume rm -f dokploy-postgres-database redis-data-volume
+```
+
+Step 3. Remove Dokploy Filesystem:
+
+```bash
+sudo rm -rf /etc/dokploy
+```
+
+
+
