@@ -1,5 +1,10 @@
 {
   "$schema": "https://mintlify.com/schema.json",
+  "analytics": {
+    "ga4": {
+      "measurementId": "G-0RTZ5EPB26"
+    }
+  },
   "name": "Dokploy",
   "logo": {
     "dark": "/logo/logo.png",
