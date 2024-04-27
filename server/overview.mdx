@@ -1,0 +1,147 @@
+---
+title: Overview
+---
+
+Dokploy provides multiples functions to manage your server.
+
+- Server
+- Profile
+- Appareance
+- S3 Destinations
+- Certificates
+- Users
+
+## Server
+
+In the `Server` tab you have multiples functions to manage your server.
+
+You have a multiple actions to manage your server.
+
+- Reload the instance where Dokploy is Running
+- Watch Logs
+- View main traefik configuration that is using Dokploy
+- View middlewares
+- Enter the terminal of the remote server (You need to paste your SSH Key from your computer)
+
+### Server domain
+
+You can set the server domain and letsencrypt certificates in the `Server domain` section, this will allow you to use the `https` protocol in your server and the desired domain.
+
+### Github 
+
+In the `Github` section you can configure your github account.
+
+It will ask you if is a organization or a personal account.
+
+If is a organization it will ask you the organization name.
+If is a personal account, simple just Click on `Create`.
+
+After that it will create a github app in your account, and you will be redirected to dokploy panel.
+
+You will see a new button called `Install Github App`, and it will install the app in your github account.
+
+Now you are able to get all your repositories and deploy them in your server.
+
+### Space
+
+In the case you are running in to a space limit, you can clean up by doing some of the following:
+
+- Clean unused images
+- Clean unused volumes
+- Clean unused containers
+- Clean Docker Builder & System
+- Clean All
+
+### Traefik
+
+If you want to access and see the logs from traefik you can click on `Traefik` dropdown and it will display a few actions.
+
+- Reload (Becareful, it will reload the configuration, so all the websites will be failed until the traefik configuration is reloaded)
+- Watch Logs
+- View Traefik Config
+- Enter the terminal
+
+<Tip>
+You can also use the `Traefik` tab to clean up your traefik configuration.
+</Tip>
+
+## Server profile
+
+Here is for personalize your profile, you can change your email, password and Avatar.
+
+### 2FA
+
+To enable 2FA you see a button `Enable 2FA`, it will ask you for a Google Authenticator app to scan the QR code that we provide to you, and you only need to enter the code that the app will show you.
+
+## Server appearance
+
+Here you can change the appearance of your server.
+
+## S3 Destinations
+
+In the `S3 Destinations` section you can configure your S3 buckets, you can use them to store your backups.
+
+### Create
+
+In order to create a new S3 Bucket, you need to fill the form.
+
+- Name: This could be anything you want, it will be the name of the bucket.
+- Access Key: This is the access key that you will use to access your bucket.
+- Secret Key: This is the secret key that you will use to access your bucket.
+- Bucket: This is the bucket that you will use to access your bucket.
+- Region: This is the region that you will use to access your bucket.
+- Endpoint: This is the endpoint that you will use to access your bucket.   
+
+
+<Tip>
+ There is a Button `Test` that will test the connection to your bucket, if it is correct it will show you a success message.
+</Tip>
+
+
+
+## Users
+
+In dokploy there could be only One `Admin`.
+
+If you want to create a new user you can go to the `Users` tab and you will see a form to create a new user.
+
+It will ask you for the following information:
+
+- Email: This is the email that you will use to login.
+
+When you create the new user it automatically will create a new user in the screen, you can copy the link that it will show you and paste it in your browser, it will ask you to register as a invitation, and you will be logged in.
+
+
+## Certificates
+
+Dokploy provides a way to insert your certificates in your server.
+
+It will ask you for the following information:
+
+- Name: This could be anything you want, it will be the name of the certificate.
+- Certificate Data: This is the private key that you will use to login. 
+- Private Key
+
+<Warning>
+It only will create the certificate in the server, if you need to configure or manager more in detail you can use the `Traefik` tab to configure it.
+</Warning>
+
+
+### Permissions
+
+Dokploy provides multiples permissions to manage your users.
+
+**Create Projects** will allow you to create new projects.
+
+**Create Services** will allow you to create new applications or databases.
+
+**Access to traefik files tab**  will allow you to access to traefik files tab.
+
+**Delete Projects** will allow you to delete projects.
+
+**Delete Services**  will allow you to delete services.
+
+**Access to Docker tab**  will allow you to access to docker tab.
+
+You can also apply permissions to allow to access to specific projects/services
+

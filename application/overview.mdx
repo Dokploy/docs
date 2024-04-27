@@ -1,0 +1,53 @@
+---
+title: Overview
+---
+
+
+Dokploy includes multiples ways to deploy applications.
+
+- Github
+- Git (Any Git Provider)
+- Docker
+
+
+## Github
+
+The easiest way to deploy your application is to use Github. 
+
+You can configure your Github Repository in `/dashboard/settings/server` route.
+
+And when you create a application it will automatically load the repository and branches.
+
+
+## Git
+
+If you want to deploy your application from a any Git Repository that is private or public you can use the Git option, you can use SSH or HTTPS.
+
+It will ask you to enter the repository URL and the branch you want to deploy.
+
+
+
+## Docker
+
+Specify a docker image, in the case of a private repository you can provide the username and password.
+
+
+
+## Auto Deploy
+
+You can configure your application to auto deploy on any action, for example when you push a new commit to your repository.
+
+To configure this you can go to `deployments` Tab and you will see a `Webhook URL`, copy this URL.
+
+
+For any Git provider, is very common that the repository have a Webhook Tab that you can insert any URL.
+
+So copy the URL and paste it in the Webhook URL field.
+
+It will ask what events you want to trigger the deployment, select the `Push` event.
+
+And you are done, your application will be deployed automatically when you push a new commit to your repository.
+
+Currently we support the webhooks from Github, Gitlab, Bitbucket and Gitea, also for DockerHub.
+
+

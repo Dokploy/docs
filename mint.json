@@ -53,19 +53,14 @@
   
   "anchors": [
     {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
+      "name": "Github",
+      "icon": "github",
+      "url": "https://github.com/dokploy"
     },
     {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
-    },
-    {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "name": "Discord",
+      "icon": "discord",
+      "url": "https://discord.gg/dokploy"
     }
   ],
   "navigation": [
@@ -77,6 +72,7 @@
         "uninstall"
       ]
     },
+
     {
       "group": "Domain",
       "pages": [
@@ -85,31 +81,41 @@
       ]
     },
     {
+      "group": "Server",
+      "pages": [
+        "server/overview"
+      ]
+    },
+    {
       "group": "Application",
       "pages": [
-        "applications/create",
-        "applications/build-type",
-        "applications/examples"
+        "application/overview",
+        "application/build-type"
       ]
     },
     {
       "group": "Databases",
       "pages": [
-        "databases/create",
+        "databases/overview",
         "databases/backups"
       ]
     },
     {
       "group": "Traefik",
       "pages": [
-        "traefik/manage",
-        "traefik/backups"
+        "traefik/overview"
       ]
     },
     {
-      "group": "Troubleshooting",
+      "group": "Docker",
       "pages": [
-        "troubleshooting/migrations"
+        "docker/overview"
+      ]
+    },
+    {
+      "group": "Monitoring",
+      "pages": [
+        "monitoring/overview"
       ]
     }
   ],
