@@ -1,27 +1,26 @@
 ---
 title: 'Installation'
-description: 'Get Dokploy up and running on your server within minutes with this easy-to-follow installation guide'
+description: 'Get Dokploy up and running on your server within minutes with this easy-to-follow installation guide.'
 ---
 
 ## Set Up Your Environment
 
-Learn how to set up Dokploy locally and deploy it to your server to manage Docker containers and applications effectively.
+Follow these steps in order to set up Dokploy locally and deploy it to your server, effectively managing Docker containers and applications:
 
 {/* create a list please of the steps  */}
 
 You need to follow this steps in the same order:
 
-* [1. VPS](#virtual-private-server-vps)
-* [2. Docker](#docker)
-* [3. Server](#server)
+1. [Virtual Private Server (VPS)](#virtual-private-server-vps)
+2. [Docker](#docker)
+3. [Server](#server)
 
 
 
 ## Virtual Private Server (VPS)
 
-There are multiples VPS providers to choose from.
+There are multiple VPS providers to choose from. Here is a list of the most common VPS providers:
 
-Here is a list from the most commons vps providers.
 
 ### Providers
 
@@ -34,54 +33,37 @@ Here is a list from the most commons vps providers.
 - [AWS](https://aws.amazon.com/ec2/pricing/)
 
 
-### Requirements 
+### Requirements
 
-To have a nice experience with Dokploy, it is necessary to have at least 2GB of Ram and 30GB of Disk, because Dokploy runs with docker, and when docker run the build it consume more resources so in order to prevent the freeze we suggest to have at least 2GB of Ram and 30GB of Disk.
-
-#### Suggestion
+To ensure a smooth experience with Dokploy, your server should have at least 2GB of RAM and 30GB of disk space. This specification helps to handle the resources consumed by Docker during builds and prevents system freezes.
 
 
 <Info>
-Probably you want to save some money, We suggest go to Hetzner as best cheap/quality VPS provider.
+ **Suggestion:** For cost efficiency with reliable service, we recommend Hetzner as the best value-for-money VPS provider.
 </Info>
 
 
 ### Docker
 
-Since dokploy runs with docker, is necessary to have docker installed on your server, but don't worry if you don't have docker installed, we will provide a command to automatically install docker on your server.
-
-
-
-
-### Server
-
-In order to use Dokploy, it is necessary to log in to your server, we suggest to use SSH.
-
-There is guide to set up SSH on your server.
-
-- [Hetzner SSH Configuration](https://community.hetzner.com/tutorials/add-ssh-key-to-your-hetzner-cloud)
-
-If you are already logged in to your server. You can use the following command:
+Dokploy utilizes Docker, so it is essential to have Docker installed on your server. If Docker is not already installed, use the following command to install it automatically:
 
 ```bash
 curl -sSL https://dokploy.com/install.sh | sh
 ```
 
-This command will make the following things:
+## Completing the Setup
 
-- Install Docker
-- Initialize Docker Network
-- Initialize Docker Swarm
-- Install Dokploy
+After running the installation script, Dokploy and its dependencies will be set up on your server. Here's how to finalize the setup and start using Dokploy:
 
-When the command is done, you can start using Dokploy.  
+### Accessing Dokploy
 
-By simply type in the browser `your-ip-from-your-vps:3000` and you will be able to access Dokploy trought the internet.
+Open your web browser and navigate to `http://your-ip-from-your-vps:3000`. You will be directed to the initial setup page where you can configure the administrative account for Dokploy.
 
-and then you will see this screen which you can configure the admin account.
+### Initial Configuration
 
+1. **Create an Admin Account:** Fill in the necessary details to set up your administrator account. This account will be the admin account for Dokploy.
 
-    <img
+<img
     className="hidden dark:block"
     src="/images/setup.png"
     alt="Hero Dark"

@@ -1,15 +1,23 @@
 ---
 title: Overview
+description: 'Understand how Dokploy uses Docker Swarm for deploying applications and managing containers directly from the dashboard.'
 ---
 
-Dokploy relies on Docker, specifically on `Docker Swarm`, to deploy your applications.
+Dokploy leverages Docker Swarm to orchestrate and manage container deployments for your applications, providing an intuitive interface for monitoring and control.
 
-We provide a simple way to see all the containers running in your server.
+## Viewing Containers
 
-to see all the containers running in your server you can go to `/dashboard/docker` route.
+To monitor and manage the containers running on your server:
 
-You have 3 actions you can perform on your containers.
+- Navigate to the `/dashboard/docker` route in Dokploy.
+- This page displays all the containers currently active on your server.
 
-- `View Logs`  will show you the logs of the container.
-- `View Config`  will show you the configuration of the container.
-- `Terminal`  will open a terminal in the container.
+## Container Actions
+
+For each container, you have several management options:
+
+- **View Logs**: Access real-time logs from the container to monitor its activity and troubleshoot issues.
+- **View Config**: Review the configuration settings of the container to understand its deployment parameters.
+- **Terminal**: Open a terminal session directly within the container for advanced management tasks.
+
+These features provide comprehensive tools to manage your applications' containers effectively, all from within Dokploy’s user-friendly dashboard.

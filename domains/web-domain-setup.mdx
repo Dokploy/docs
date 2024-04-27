@@ -1,49 +1,35 @@
 ---
 title: 'Web Domain Setup'
-description: 'Learn how to setup a main domain to dokploy panel'
+description: 'Learn how to setup a main domain for the Dokploy panel'
 ---
 
 ## Introduction
 
-This section will cover the basic setup of a main domain.
+This guide covers the basic setup of a main domain for your Dokploy panel.
 
 ## Requirements
 
-First off is required to have a domain purchased.
-
-You can use the following domains providers to purchase a domain, they are around between 2$ and 20$/year.
+Before beginning, ensure you have a domain purchased from one of the following providers:
 
 - [Namecheap](https://www.namecheap.com/domains/)
 - [Name.com](https://www.name.com/)
 - [GoDaddy](https://www.godaddy.com/)
 - [Domain.com](https://www.domain.com/)
 
-
 ## Transfer Setup
 
-Our suggest when you buy a domain is transfer your domain to Cloudflare.
-
-this give advanced security, protection and advanced tools.
-
-Here is a guide to transfer your domain to Cloudflare.
+We recommend transferring your domain to Cloudflare for enhanced security and tools:
 
 - [Transfer Domain to Cloudflare](https://developers.cloudflare.com/registrar/get-started/transfer-domain-to-cloudflare/)
 
 ## DNS Setup
 
-We will use [Cloudflare](https://www.cloudflare.com/) as our DNS provider, since provides the most secure and reliable DNS provider, but you can use any DNS provider.
+Use [Cloudflare](https://www.cloudflare.com/) for DNS management:
 
-Log in to your account and go to `Websites` -> `Click on your domain` -> `DNS` -> `Records`.
-
-Then click on `Add record` and select `A`. 
-
-In name field type in your domain name and in value field type in your IP address.
-
-Example: let's suppose your domain is `dokploy.com` and your IP address is `1.2.3.4`.
-
-and you want your panel be under `web.dokploy.com`, then type `web` in name field and `1.2.3.4` in value field and click on `Save`.
-
-So your final record will be `web.dokploy.com`.
+1. Log in to Cloudflare and navigate to `Websites` -> `Your Domain` -> `DNS` -> `Records`.
+2. Click on `Add record`, select `A`.
+3. Enter `web` in the name field and your IP address (e.g., `1.2.3.4`) in the value field.
+4. Save the record. Your DNS record will be `web.dokploy.com`.
 
 <Frame>
   <img src="/images/web-domain-setup/domain-setup.png" style={{ borderRadius: '0.5rem' }} />
@@ -51,7 +37,11 @@ So your final record will be `web.dokploy.com`.
 
 ## Dokploy Panel Setup
 
-Go to to your panel and log in with your credentials and go to `/dashboard?tab=settings` route and go to Server domain and set the exact same domain that you set in Cloudflare, click save give them like 20 seconds and go to `https://web.dokploy.com`.
+1. Log in to your Dokploy panel.
+2. Navigate to `/dashboard/settings/server`.
+3. Under Server domain, set your domain to match the one configured in Cloudflare (e.g., `web.dokploy.com`).
+4. Save and allow about 20 seconds for changes to apply.
+5. Access your panel via `https://web.dokploy.com`.
 
 <Frame>
   <img src="/images/web-domain-setup/dokploy-domain.png" style={{ borderRadius: '0.5rem' }} />

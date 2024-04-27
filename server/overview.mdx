@@ -1,85 +1,56 @@
 ---
 title: Overview
+description: 'Dokploy offers multiple functions to manage your server efficiently. These include managing server settings, profiles, appearance, S3 destinations, certificates, and users.'
 ---
-
-Dokploy provides multiples functions to manage your server.
-
-- Server
-- Profile
-- Appareance
-- S3 Destinations
-- Certificates
-- Users
 
 ## Server
 
-In the `Server` tab you have multiples functions to manage your server.
+The `Server` tab provides various functions:
 
-You have a multiple actions to manage your server.
+- **Reload Instance**: Reload the Dokploy instance.
+- **Watch Logs**: Monitor server logs.
+- **Traefik Configuration**: View main Traefik configurations.
+- **View Middlewares**: Inspect active middlewares.
+- **SSH Access**: Enter the server terminal (requires SSH key).
 
-- Reload the instance where Dokploy is Running
-- Watch Logs
-- View main traefik configuration that is using Dokploy
-- View middlewares
-- Enter the terminal of the remote server (You need to paste your SSH Key from your computer)
 
-### Server domain
+### Server Domain
 
-You can set the server domain and letsencrypt certificates in the `Server domain` section, this will allow you to use the `https` protocol in your server and the desired domain.
+Set the server domain and configure Let's Encrypt certificates to enable HTTPS.
 
-### Github 
+### GitHub Integration
 
-In the `Github` section you can configure your github account.
+Configure your GitHub account to manage organization or personal projects. This section guides you through creating a GitHub app and deploying repositories.
 
-It will ask you if is a organization or a personal account.
+### Space Management
 
-If is a organization it will ask you the organization name.
-If is a personal account, simple just Click on `Create`.
-
-After that it will create a github app in your account, and you will be redirected to dokploy panel.
-
-You will see a new button called `Install Github App`, and it will install the app in your github account.
-
-Now you are able to get all your repositories and deploy them in your server.
-
-### Space
-
-In the case you are running in to a space limit, you can clean up by doing some of the following:
-
-- Clean unused images
-- Clean unused volumes
-- Clean unused containers
-- Clean Docker Builder & System
-- Clean All
+Manage server space by cleaning unused Docker images, volumes, and containers.
 
 ### Traefik
 
-If you want to access and see the logs from traefik you can click on `Traefik` dropdown and it will display a few actions.
+Access and manage Traefik settings:
 
-- Reload (Becareful, it will reload the configuration, so all the websites will be failed until the traefik configuration is reloaded)
-- Watch Logs
-- View Traefik Config
-- Enter the terminal
+- **Reload**: Refresh Traefik configuration.
+- **Watch Logs**: View Traefik logs.
+- **View Config**: Inspect Traefik configuration.
+- **Terminal Access**: Access Traefik via terminal.
 
-<Tip>
-You can also use the `Traefik` tab to clean up your traefik configuration.
-</Tip>
 
-## Server profile
+## Server Profile
 
-Here is for personalize your profile, you can change your email, password and Avatar.
+Customize your profile settings including email, password, and avatar.
 
 ### 2FA
 
-To enable 2FA you see a button `Enable 2FA`, it will ask you for a Google Authenticator app to scan the QR code that we provide to you, and you only need to enter the code that the app will show you.
+Enable two-factor authentication using the Google Authenticator app.
 
-## Server appearance
+## Server Appearance
 
-Here you can change the appearance of your server.
+Adjust the visual appearance of your server interface.
 
 ## S3 Destinations
 
-In the `S3 Destinations` section you can configure your S3 buckets, you can use them to store your backups.
+Configure S3 buckets for backup storage. This includes setting up access keys, secret keys, bucket names, regions, and endpoints.
 
 ### Create
 
@@ -97,34 +68,21 @@ In order to create a new S3 Bucket, you need to fill the form.
  There is a Button `Test` that will test the connection to your bucket, if it is correct it will show you a success message.
 </Tip>
 
-
-
-## Users
-
-In dokploy there could be only One `Admin`.
-
-If you want to create a new user you can go to the `Users` tab and you will see a form to create a new user.
-
-It will ask you for the following information:
-
-- Email: This is the email that you will use to login.
-
-When you create the new user it automatically will create a new user in the screen, you can copy the link that it will show you and paste it in your browser, it will ask you to register as a invitation, and you will be logged in.
-
-
 ## Certificates
 
-Dokploy provides a way to insert your certificates in your server.
+Manage SSL/TLS certificates:
 
-It will ask you for the following information:
-
-- Name: This could be anything you want, it will be the name of the certificate.
-- Certificate Data: This is the private key that you will use to login. 
-- Private Key
+- **Name**: Assign a name to the certificate.
+- **Certificate Data**: Provide certificate details.
+- **Private Key**: Enter the private key.
 
 <Warning>
 It only will create the certificate in the server, if you need to configure or manager more in detail you can use the `Traefik` tab to configure it.
 </Warning>
+
+## Users
+
+Manage user roles and permissions within Dokploy. Admin roles are limited to one per instance.
 
 
 ### Permissions
@@ -145,3 +103,9 @@ Dokploy provides multiples permissions to manage your users.
 
 You can also apply permissions to allow to access to specific projects/services
 
+
+## Tips and Warnings
+
+- Use the `Traefik` tab for detailed configuration adjustments.
+- Test connections to S3 buckets before use to ensure settings are correct.
+- Remember, certificates added in Dokploy need further configuration in the `Traefik` tab if detailed management is required.
