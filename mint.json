@@ -40,12 +40,6 @@
     "default": "dark",
     "isHidden": true
   },
-  "topbarLinks": [
-    {
-      "name": "Support",
-      "url": "mailto:support@dokploy.com"
-    }
-  ],
   "topbarCtaButton": {
     "name": "Website",
     "url": "https://dokploy.com"
@@ -55,12 +49,12 @@
     {
       "name": "Github",
       "icon": "github",
-      "url": "https://github.com/dokploy"
+      "url": "https://github.com/Dokploy/dokploy"
     },
     {
       "name": "Discord",
       "icon": "discord",
-      "url": "https://discord.gg/dokploy"
+      "url": "https://discord.gg/eFAbHJHVYc"
     }
   ],
   "navigation": [
@@ -121,6 +115,6 @@
   ],
   "footerSocials": {
     "x": "https://x.com/dokploy",
-    "github": "https://github.com/dokploy"
+    "github": "https://github.com/Dokploy/dokploy"
   }
 }
