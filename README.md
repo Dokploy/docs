@@ -1,12 +1,9 @@
 # Mintlify Starter Kit
 
-Click on `Use this template` to copy the Mintlify starter kit. The starter kit contains examples including
+# Dokploy
 
-- Guide pages
-- Navigation
-- Customizations
-- API Reference pages
-- Use of popular components
+Welcome to Dokploy documentation, the open-source alternative to platforms like Heroku, Vercel, and Netlify. Dokploy allows developers to deploy multiple web applications on a single Virtual Private Server (VPS), reducing costs and increasing control over deployment environments.
+
 
 ### Development
 
