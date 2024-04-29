@@ -1,6 +1,4 @@
-# Mintlify Starter Kit
-
-# Dokploy
+# Dokploy Documentation
 
 Welcome to Dokploy documentation, the open-source alternative to platforms like Heroku, Vercel, and Netlify. Dokploy allows developers to deploy multiple web applications on a single Virtual Private Server (VPS), reducing costs and increasing control over deployment environments.
 
