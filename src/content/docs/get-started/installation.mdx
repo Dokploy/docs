@@ -1,21 +1,22 @@
 ---
-title: 'Installation'
-description: 'Get Dokploy up and running on your server within minutes with this easy-to-follow installation guide.'
+title: "Installation"
+description: "Get Dokploy up and running on your server within minutes with this easy-to-follow installation guide."
+sidebar:
+  order: 1
 ---
-import { Aside } from '@astrojs/starlight/components';
+
+import { Aside } from "@astrojs/starlight/components"
 
 ## Set Up Your Environment
 
 Follow these steps in order to set up Dokploy locally and deploy it to your server, effectively managing Docker containers and applications:
 
-{/* create a list please of the steps  */}
+{/* create a list please of the steps */}
 
 You need to follow this steps in the same order:
 
 1. [Virtual Private Server (VPS)](#virtual-private-server-vps)
 2. [Docker](#docker)
-
-
 
 ## Virtual Private Server (VPS)
 
@@ -25,7 +26,6 @@ We have tested on two Linux Distros:
 
 - Ubuntu Server 20.04 LTS
 - Debian 10
-
 
 ### Providers
 
@@ -37,17 +37,15 @@ We have tested on two Linux Distros:
 - [Google Cloud](https://cloud.google.com/)
 - [AWS](https://aws.amazon.com/ec2/pricing/)
 
-
 ### Requirements
 
 To ensure a smooth experience with Dokploy, your server should have at least 2GB of RAM and 30GB of disk space. This specification helps to handle the resources consumed by Docker during builds and prevents system freezes.
 
 <Aside type="tip">
 
- **Suggestion:** For cost efficiency with reliable service, we recommend Hetzner as the best value-for-money VPS provider.
+**Suggestion:** For cost efficiency with reliable service, we recommend Hetzner as the best value-for-money VPS provider.
 
 </Aside>
-
 
 ### Docker
 
@@ -68,6 +66,5 @@ Open your web browser and navigate to `http://your-ip-from-your-vps:3000`. You w
 ### Initial Configuration
 
 1. **Create an Admin Account:** Fill in the necessary details to set up your administrator account. This account will be the admin account for Dokploy.
-
 
 ![Domain dokploy configuration](../../../assets/images/setup.png)
