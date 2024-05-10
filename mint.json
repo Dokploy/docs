@@ -63,6 +63,7 @@
       "pages": [
         "introduction",
         "installation",
+        "reset-password",
         "uninstall"
       ]
     },
