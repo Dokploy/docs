@@ -114,6 +114,12 @@
       ]
     },
     {
+      "group": "Deployment",
+      "pages": [
+        "deployment/oracle-cloud"
+      ]
+    },
+    {
       "group": "Extra",
       "pages": [
         "extra/comparison"
