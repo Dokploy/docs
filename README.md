@@ -1,27 +1,36 @@
-# Dokploy Documentation
+## 🚀 Project Structure
 
-Welcome to Dokploy documentation, the open-source alternative to platforms like Heroku, Vercel, and Netlify. Dokploy allows developers to deploy multiple web applications on a single Virtual Private Server (VPS), reducing costs and increasing control over deployment environments.
-
-
-### Development
-
-Install the [Mintlify CLI](https://www.npmjs.com/package/mintlify) to preview the documentation changes locally. To install, use the following command
+Inside of your Astro + Starlight project, you'll see the following folders and files:
 
 ```
-npm i -g mintlify
+.
+├── public/
+├── src/
+│   ├── assets/
+│   ├── content/
+│   │   ├── docs/
+│   │   └── config.ts
+│   └── env.d.ts
+├── astro.config.mjs
+├── package.json
+└── tsconfig.json
 ```
 
-Run the following command at the root of your documentation (where mint.json is)
+Starlight looks for `.md` or `.mdx` files in the `src/content/docs/` directory. Each file is exposed as a route based on its file name.
 
-```
-mintlify dev
-```
+Images can be added to `src/assets/` and embedded in Markdown with a relative link.
 
-### Publishing Changes
+Static assets, like favicons, can be placed in the `public/` directory.
 
-Install our Github App to autopropagate changes from youre repo to your deployment. Changes will be deployed to production automatically after pushing to the default branch. Find the link to install on your dashboard. 
+## 🧞 Commands
 
-#### Troubleshooting
+All commands are run from the root of the project, from a terminal:
 
-- Mintlify dev isn't running - Run `mintlify install` it'll re-install dependencies.
-- Page loads as a 404 - Make sure you are running in a folder with `mint.json`
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
