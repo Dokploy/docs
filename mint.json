@@ -112,6 +112,12 @@
       "pages": [
         "monitoring/overview"
       ]
+    },
+    {
+      "group": "Extra",
+      "pages": [
+        "extra/comparison"
+      ]
     }
   ],
   "footerSocials": {
