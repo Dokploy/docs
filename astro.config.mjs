@@ -99,7 +99,7 @@ export default defineConfig({
         },
         {
           label: "Server",
-          translations: { "zh-CN": "服务" },
+          translations: { "zh-CN": "服务器" },
           items: [
             {
               label: "Overview",

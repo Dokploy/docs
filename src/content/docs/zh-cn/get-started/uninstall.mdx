@@ -7,7 +7,7 @@ description: "了解如何在服务器上卸载 Dokploy"
 
 按照以下步骤从您的服务器中完全删除 Dokploy 及其组件。
 
-### 第 1 步：删除 Docker Swarm 服务
+### 第 1 步： 删除 Docker Swarm 服务
 
 首先，删除 Dokploy 创建的 Docker Swarm 服务：
 
@@ -15,7 +15,7 @@ description: "了解如何在服务器上卸载 Dokploy"
 docker service rm dokploy dokploy-traefik dokploy-postgres dokploy-redis
 ```
 
-### 第 2 步：删除 Docker 挂载卷
+### 第 2 步： 删除 Docker 挂载卷
 
 接下来，删除 Dokploy 创建的 Docker 卷：
 
@@ -23,7 +23,7 @@ docker service rm dokploy dokploy-traefik dokploy-postgres dokploy-redis
 docker volume rm -f dokploy-postgres-database redis-data-volume
 ```
 
-### 第 3 步：删除 Dokploy 文件
+### 第 3 步： 删除 Dokploy 文件
 
 最后，从服务器上删除 Dokploy 文件和目录：
 

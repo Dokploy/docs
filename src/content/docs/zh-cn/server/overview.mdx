@@ -1,52 +1,52 @@
 ---
 title: 概述
-description: "Dokploy 提供多种功能来有效管理您的服务器。其中包括管理服务器设置、配置文件、外观、S3目标、证书和用户。"
+description: "Dokploy 提供多种功能来有效管理您的服务器。其中包括管理服务器设置、配置文件、外观、S3存储、证书和用户。"
 ---
 
 import { Aside } from "@astrojs/starlight/components";
 
-## 服务
+## 服务器
 
-`Server` 选项卡提供各种功能：
+`Server` 选项卡提供服务管理的各种功能：
 
-- **重新加载实例**: 重新加载 Dokploy 实例.
-- **观察日志**: 监视服务器日志.
-- **Traefik 配置**: 查看 Traefik 的主要配置。
-- **查看中间件**: 检查活动的中间件。
-- **SSH 访问**: 输入服务器终端（需要 SSH 密钥）。
+- **Reload Instance(重新加载实例)**: 重新加载 Dokploy 实例.
+- **Watch Logs(观察日志)**: 监视服务器日志.
+- **Traefik Configuration(Traefik 配置)**: 查看 Traefik 的主要配置。
+- **View Middlewares(查看中间件)**: 检查活动的中间件。
+- **SSH Access(SSH 访问)**: 输入服务器终端（需要 SSH 密钥）。
 
-### 服务域名
+### 服务器域名
 
 设置服务器域并配置 Let's Encrypt 证书以启用 HTTPS。
 
 ### GitHub 集成
 
-配置您的 GitHub 帐户以管理组织或个人项目。 本节将指导您创建 GitHub 应用程序和部署存储库。
+配置您的 GitHub 帐户以管理组织或个人项目。 将用于您从 GitHub创建应用程序和部署存储库。
 
 ### 空间管理
 
-通过清理未使用的 Docker 镜像、卷和容器来管理服务器空间。
+清理未使用的 Docker 镜像、卷和容器来管理服务器空间。
 
 ### Traefik
 
 访问和管理 Traefik 设置：
 
-- **重载**: 刷新 Traefik 配置。
-- **观察日志**: 查看 Traefik 日志。
-- **视图配置**: 检查 Traefik 配置。
-- **终端访问**: 通过终端访问 Traefik。
+- **Reload(重载)**: 刷新 Traefik 配置。
+- **Watch Logs(查看日志)**: 查看 Traefik 日志。
+- **View Config(视图配置)**: 检查 Traefik 配置。
+- **Terminal Access(终端访问)**: 通过终端访问 Traefik。
 
-## 服务信息
+## 服务器信息
 
-自定义您的个人资料设置，包括电子邮件、密码和头像。
+自定义您的个人资料，包括电子邮件、密码和头像。
 
 ### 两步验证
 
 使用 Google Authenticator 应用程序启用双重身份验证。
 
-## 服务外观
+## 服务器外观
 
-调整服务器界面的视觉外观。
+调整服务器界面的视觉外观、主题。
 
 ## S3 存储
 
@@ -54,7 +54,7 @@ import { Aside } from "@astrojs/starlight/components";
 
 ### 创建
 
-为了创建新的 S3 Bucket，您需要填写表单。
+为了创建新的 S3 存储桶，您需要填写表单。
 
 - Name: 这可以是您想要的任何东西，它将是存储桶的名称。
 - Access Key: 这是您将用来访问存储桶的访问密钥。
@@ -76,8 +76,7 @@ import { Aside } from "@astrojs/starlight/components";
 - **Private Key**: 输入私钥。
 
 <Aside type="caution">
-  它只会在服务器中创建证书，如果您需要更详细地配置或管理，您可以使用 “Traefik”
-  选项卡来配置它。
+  它只会在服务器中创建证书，如果您需要更详细地配置或管理，您可以使用 `Traefik` 选项卡来配置它。
 </Aside>
 
 ## 用户
@@ -104,6 +103,6 @@ Dokploy 提供多种权限来管理您的用户。
 
 ## 提示和警告
 
-- 使用 “Traefik” 选项卡进行详细的配置调整。
+- 使用 `Traefik` 选项卡进行详细的配置调整。
 - 使用前测试与 S3 桶的连接，以确保设置正确。
-- 请记住，如果需要详细管理，Dokploy 中添加的证书需要在 “Traefik” 选项卡中进一步配置。
+- 请记住，如果需要详细管理，Dokploy 中添加的证书需要在 `Traefik` 选项卡中进一步配置。

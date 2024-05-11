@@ -1,6 +1,6 @@
 ---
-title: Example Reference
-description: A reference page in my new Starlight docs site.
+title: 示例参考
+description: 我的新 Starlight 文档网站中的参考页面。
 ---
 
 Reference pages are ideal for outlining how things work in terse and clear terms.
