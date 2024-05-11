@@ -8,6 +8,9 @@ dependencies:
   '@astrojs/check':
     specifier: ^0.6.0
     version: 0.6.0(typescript@5.4.5)
+  '@astrojs/partytown':
+    specifier: ^2.1.0
+    version: 2.1.0
   '@astrojs/starlight':
     specifier: ^0.22.2
     version: 0.22.2(astro@4.8.2)
@@ -151,6 +154,13 @@ packages:
       vfile: 6.0.1
     transitivePeerDependencies:
       - supports-color
+    dev: false
+
+  /@astrojs/partytown@2.1.0:
+    resolution: {integrity: sha512-9fjvTx2hTQpirUh1HnZZtFQaBz2R5ixrrmU/Zam3VZ9CoR3frqtnqg/Dt/i5C3UAlwiN0i8VuKxPx5cHP8yY5A==}
+    dependencies:
+      '@builder.io/partytown': 0.10.2
+      mrmime: 2.0.0
     dev: false
 
   /@astrojs/prism@3.1.0:
@@ -465,6 +475,12 @@ packages:
       '@babel/helper-string-parser': 7.24.1
       '@babel/helper-validator-identifier': 7.24.5
       to-fast-properties: 2.0.0
+    dev: false
+
+  /@builder.io/partytown@0.10.2:
+    resolution: {integrity: sha512-A9U+4PREWcS+CCYzKGIPovtGB/PBgnH/8oQyCE6Nr9drDJk6cMPpLQIEajpGPmG9tYF7N3FkRvhXm/AS9+0iKg==}
+    engines: {node: '>=18.0.0'}
+    hasBin: true
     dev: false
 
   /@ctrl/tinycolor@4.1.0:
