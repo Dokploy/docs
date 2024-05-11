@@ -1,6 +1,8 @@
 ---
-title: 'Uninstall'
-description: 'Learn how to uninstall Dokploy on your server'
+title: "Uninstall"
+description: "Learn how to uninstall Dokploy on your server"
+sidebar:
+  order: 3
 ---
 
 ## Uninstallation Steps
@@ -14,7 +16,6 @@ First, remove the Docker Swarm services created by Dokploy:
 ```bash
 docker service rm dokploy dokploy-traefik dokploy-postgres dokploy-redis
 ```
-
 
 ### Step 2: Remove Docker Volumes
 
@@ -31,6 +32,3 @@ Finally, remove the Dokploy files and directories from your server:
 ```bash
 sudo rm -rf /etc/dokploy
 ```
-
-
-
