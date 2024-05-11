@@ -1,6 +1,5 @@
-import { defineConfig } from "astro/config"
-import starlight from "@astrojs/starlight"
-
+import { defineConfig } from "astro/config";
+import starlight from "@astrojs/starlight";
 import tailwind from "@astrojs/tailwind"
 
 // https://astro.build/config
@@ -57,76 +56,143 @@ export default defineConfig({
       sidebar: [
         {
           label: "Get Started",
-          autogenerate: { directory: "get-started" },
-          translations: {
-            "zh-CN": "开始",
-          },
+          translations: { "zh-CN": "快速入门" },
+          items: [
+            {
+              label: "Introduction",
+              translations: { "zh-CN": "介绍" },
+              link: "/get-started/introduction",
+            },
+            {
+              label: "Installation",
+              translations: { "zh-CN": "安装" },
+              link: "/get-started/installation",
+            },
+            {
+              label: "Reset Password",
+              translations: { "zh-CN": "重置密码" },
+              link: "/get-started/reset-password",
+            },
+            {
+              label: "Uninstall",
+              translations: { "zh-CN": "卸载" },
+              link: "/get-started/uninstall",
+            },
+          ],
         },
         {
           label: "Domain",
-          autogenerate: { directory: "domains" },
-          translations: {
-            "zh-CN": "域名",
-          },
+          translations: { "zh-CN": "域名" },
+          items: [
+            {
+              label: "Web Domain Setup",
+              translations: { "zh-CN": "Web 域名配置" },
+              link: "/domains/web-domain-setup",
+            },
+            {
+              label: "Application Domain Setup",
+              translations: { "zh-CN": "应用域名配置" },
+              link: "/domains/application-setup",
+            },
+          ],
         },
         {
           label: "Server",
-          autogenerate: { directory: "server" },
-          translations: {
-            "zh-CN": "服务器",
-          },
+          translations: { "zh-CN": "服务器" },
+          items: [
+            {
+              label: "Overview",
+              translations: { "zh-CN": "概述" },
+              link: "/server/overview",
+            },
+          ],
         },
         {
           label: "Application",
-          autogenerate: { directory: "application" },
-          translations: {
-            "zh-CN": "应用",
-          },
+          translations: { "zh-CN": "应用" },
+          items: [
+            {
+              label: "Overview",
+              translations: { "zh-CN": "概述" },
+              link: "/application/overview",
+            },
+            {
+              label: "Build Type",
+              translations: { "zh-CN": "构建类型" },
+              link: "/application/build-type",
+            },
+          ],
         },
         {
           label: "Databases",
-          autogenerate: { directory: "databases" },
-          translations: {
-            "zh-CN": "数据库",
-          },
+          translations: { "zh-CN": "数据库" },
+          items: [
+            {
+              label: "Overview",
+              translations: { "zh-CN": "概述" },
+              link: "/databases/overview",
+            },
+            {
+              label: "Backups",
+              translations: { "zh-CN": "备份" },
+              link: "/databases/backups",
+            },
+          ],
         },
         {
           label: "Traefik",
-          autogenerate: { directory: "traefik" },
-          translations: {
-            "zh-CN": "Traefik",
-          },
+          items: [
+            {
+              label: "Overview",
+              translations: { "zh-CN": "概述" },
+              link: "/traefik/overview",
+            },
+          ],
         },
         {
           label: "Docker",
-          autogenerate: { directory: "docker" },
-          translations: {
-            "zh-CN": "Docker",
-          },
+          items: [
+            {
+              label: "Overview",
+              translations: { "zh-CN": "概述" },
+              link: "/docker/overview",
+            },
+          ],
         },
         {
           label: "Monitoring",
-          autogenerate: { directory: "monitoring" },
-          translations: {
-            "zh-CN": "监控",
-          },
+          translations: { "zh-CN": "监控" },
+          items: [
+            {
+              label: "Overview",
+              translations: { "zh-CN": "概述" },
+              link: "/monitoring/overview",
+            },
+          ],
         },
         {
           label: "Deployment",
-          autogenerate: { directory: "deployment" },
-          translations: {
-            "zh-CN": "部署",
-          },
+          translations: { "zh-CN": "部署" },
+          items: [
+            {
+              label: "Oracle Cloud",
+              link: "/deployment/oracle-cloud",
+            },
+          ],
         },
         {
           label: "Extra",
-          autogenerate: { directory: "extra" },
-          translations: {
-            "zh-CN": "杂项",
-          },
+          translations: { "zh-CN": "其它" },
+          items: [
+            {
+              label: "Comparison",
+              translations: { "zh-CN": "对比" },
+              link: "/extra/comparison",
+            },
+          ],
         },
       ],
     }),
     tailwind(),
   ],
-})
+});
