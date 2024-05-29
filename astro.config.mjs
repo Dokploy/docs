@@ -14,7 +14,8 @@ export default defineConfig({
   },
   integrations: [tailwind({
     // Disable the default base styles:
-    applyBaseStyles: false
+    applyBaseStyles: true,
+    
   }), starlight({
     // customCss: [
     //     // Path to your Tailwind base styles:
@@ -24,6 +25,7 @@ export default defineConfig({
     title: "Dokploy",
     defaultLocale: "root",
     favicon: "/favicon.svg",
+    // customCss: ["./src/tailwind.css"],
     head: [{
       tag: "script",
       attrs: {
@@ -178,6 +180,19 @@ export default defineConfig({
           "zh-CN": "概述"
         },
         link: "/monitoring/overview"
+      }]
+    },
+    {
+      label: "Cluster",
+      translations: {
+        "zh-CN": "监控"
+      },
+      items: [{
+        label: "Cluster",
+        translations: {
+          "zh-CN": "概述"
+        },
+        link: "/cluster/overview"
       }]
     }, {
       label: "Deployment",

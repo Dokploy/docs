@@ -5,30 +5,35 @@ sidebar:
   order: 3
 ---
 
+import { Steps,Step } from '@astrojs/starlight/components';
+
+
 ## Uninstallation Steps
 
 Follow these steps to completely remove Dokploy and its components from your server.
 
-### Step 1: Remove Docker Swarm Services
+<Steps>
 
-First, remove the Docker Swarm services created by Dokploy:
+1. Remove the docker swarm services created by Dokploy:
 
-```bash
-docker service rm dokploy dokploy-traefik dokploy-postgres dokploy-redis
-```
+   ```bash
+   docker service rm dokploy dokploy-traefik dokploy-postgres dokploy-redis
+   ```
 
-### Step 2: Remove Docker Volumes
+2. Remove the docker volumes created by Dokploy:
 
-Next, remove the Docker volumes created by Dokploy:
+   ```bash
+   docker volume rm -f dokploy-postgres-database redis-data-volume
+   ```
 
-```bash
-docker volume rm -f dokploy-postgres-database redis-data-volume
-```
+3. Remove the dokploy files and directories from your server:
 
-### Step 3: Remove Dokploy Files
+   ```bash
+   sudo rm -rf /etc/dokploy
+   ```
 
-Finally, remove the Dokploy files and directories from your server:
 
-```bash
-sudo rm -rf /etc/dokploy
-```
+
+</Steps>
+
+

@@ -1,0 +1,76 @@
+---
+title: Cluster
+description: "Learn how to set up and manage a cluster in Dokploy."
+sidebar:
+  order: 1
+---
+
+A cluster is a group of nodes that work together to provide a single, unified service. In Dokploy, clusters are used to manage a group of servers that work together to provide a single service.
+
+To start adding nodes to your cluster, you need to have a registry, this is because the nodes need to be able to pull images from the registry. 
+
+
+### Requirements
+
+- A server with dokploy installed.
+- A registry to store your images.
+- Another server.
+
+
+### Registry
+
+We provide two ways to add a registry to your cluster:
+
+- **Custom Registry(Free)**: Add a custom registry to your cluster this will setup a private registry in your server. 
+- **External registry(Paid)**: Add an external registry to your cluster this will setup a external registry like docker hub, digitalocean, aws ecr, etc.
+
+
+## Adding Nodes to a Cluster
+
+Once you have a registry, you can add nodes to your cluster.
+
+1. Click the `Add Node` button.
+2. Two tabs will be displayed: `Worker` and `Manager`.
+3. Select the node type you want to add to the cluster.
+4. Follow the two steps shown:
+   1. Install the Docker engine.
+   2. Install the Dokploy agent. The steps are the same for both node types.
+5. Run the provided commands on the new server.
+6. After running the commands, go to `server/settings/cluster`. You will see two entries in the table: one for the worker and one for the manager.
+
+## Deploying a application
+
+Now when you already have linked the node to the cluster, you can deploy an application to the cluster.
+
+- Create an application in a project.
+- Fork the repository [Dokploy/swarm-test](https://github.com/Dokploy/swarm-test).
+- Save it as a GitHub provider.
+- Go to the advanced tab of the application.
+- In the "Cluster Settings" section:
+  - Change the replicas of the application (default is 1).
+  - Select the registry you want the nodes to pull images from.
+- Now you are set, you can deploy the application to the cluster.
+
+
+We provide a ways to customize the application, in the same swarm settings section. you can modify almost every setting in terms of swarm application mode.
+
+In the interface we provide a placeholder and the interface we expect in each setting, all the fields are validated, and have the corrected entries since each field needs to be a JSON value.
+
+1. Healthcheck 
+2. Restart Policy
+3. Placement
+4. Update Config
+5. Rollback Config
+6. Mode
+7. Network
+8. Labels
+
+
+
+## When to override
+
+Overriding Starlight’s default components can be useful when:
+
+- You want to change how a part of Starlight’s UI looks in a way not possible with [custom CSS](/guides/css-and-tailwind/).
+- You want to change how a part of Starlight’s UI behaves.
+- You want to add some additional UI alongside Starlight’s existing UI.

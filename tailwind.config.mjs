@@ -12,5 +12,5 @@ export default {
 		// 	colors: { accent, gray },
 		// },
 	},
-	// plugins: [starlightPlugin()],
+	plugins: [starlightPlugin()],
 };
