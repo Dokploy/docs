@@ -5,15 +5,22 @@ sidebar:
   order: 1
 ---
 
+
+For most suitables cases you may not need to use a cluster, unless you need to scale your application.
 A cluster is a group of nodes that work together to provide a single, unified service. In Dokploy, clusters manage a group of servers collaborating to deliver this unified service.
 
-To start adding nodes to your cluster, you need a registry. The nodes require the registry to pull images.
+We use traefik under the hood to load balance the traffic to the application.
+
+
+We recommend to read the [Traefik Docs](https://doc.traefik.io/traefik/routing/providers/swarm/) before using a cluster, to have a better understanding of how it works.
+
+To start adding nodes to your cluster, you need a registry. The nodes require the registry to pull images .
 
 ## Requirements
 
 - A server with Dokploy installed.
 - A registry to store your images.
-- Additional servers to add as nodes.
+- Additional servers (VPS) to add as nodes.
 
 ## Registry Options
 
@@ -21,6 +28,11 @@ We provide two methods to add a registry to your cluster:
 
 - **Custom Registry (Free)**: Set up a private registry on your server.
 - **External Registry (Paid)**: Use external registries like Docker Hub, DigitalOcean, AWS ECR, etc.
+
+
+You can see you can add two types of registries:
+![Registry](../../../assets/images/cluster/registry.png)
+
 
 ## Adding Nodes to a Cluster
 
@@ -34,6 +46,9 @@ Once you have a registry, you can add nodes to your cluster by following these s
    - Install the Dokploy agent. These steps are the same for both node types.
 5. Run the provided commands on the new server.
 6. After running the commands, go to `server/settings/cluster`. You will see entries for both the worker and manager nodes in the table.
+
+![Add Node](../../../assets/images/cluster/nodes.png)
+![Cluster](../../../assets/images/cluster/cluster.png)
 
 ## Deploying an Application
 
@@ -55,7 +70,7 @@ To further enhance this setup, you can use load balancers from services like AWS
 
 To add manager nodes to the cluster, follow the same steps as adding a worker node. However, if the manager node (where Dokploy is running) fails, all other nodes will become inaccessible. This is because we currently have a single entry point for the cluster. To ensure high availability, you should have multiple manager nodes.
 
-To achieve this, you need to replicate all persistent and Traefik information to the new manager nodes. This will create multiple entry points for the cluster. You can use tools like rsync to synchronize all the necessary information between the nodes.
+To achieve this, you need to replicate all persistent and Traefik information to the new manager nodes. This will create multiple entry points for the cluster. You can use tools like rsync, aws data sync, or any other tool to synchronize all the necessary information between the nodes.
 
 
 ## Customizing the Application
@@ -75,3 +90,4 @@ In the interface, placeholders and expected formats for each setting are provide
 - Network
 - Labels
 
+![Swarm Settings](../../../assets/images/cluster/swarm-settings.png)
