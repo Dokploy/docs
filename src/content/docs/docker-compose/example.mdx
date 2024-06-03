@@ -38,7 +38,6 @@ version: "3"
 
 services:
   next-app:
-    container_name: next-app
     build:
       context: ./next-app
       dockerfile: prod.Dockerfile
@@ -58,12 +57,16 @@ networks:
 
 Updated version with dokploy-network and Traefik labels:
 
+:::danger
+Don't set container_name property to the each service, it will cause issues with logs, metrics and other features
+
+:::
+
 ```yaml
 version: "3"
 
 services:
   next-app:
-    container_name: next-app
     build:
       context: ./next-app
       dockerfile: prod.Dockerfile
@@ -101,7 +104,4 @@ Tips:
 2.  Set unique names for each service: `traefik.http.services.<unique-name>`
 3. Ensure the network is linked to the `dokploy-network`
 4. Set the entry point to websecure and the certificate resolver to letsencrypt to generate certificates.
-
-:::danger
-Don't set container_name property to the each service, it will cause issues with logs, metrics and other features
 
