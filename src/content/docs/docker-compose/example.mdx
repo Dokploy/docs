@@ -7,28 +7,31 @@ sidebar:
 
 ## Tutorial
 
-In this tutorial we will create a simple application using docker compose and routing the traffic to a accessible domain.
+In this tutorial, we will create a simple application using Docker Compose and route the traffic to an accessible domain.
 
 
 ### Steps
 
-1. Create a new project
-2. Create a new service `Compose` and select the Compose Type `Docker Compose`
-3. Fork this repository [Repo](https://github.com/Dokploy/docker-compose-test)
-4. Select Provider type Github or Git
-5. Select the repository `Dokploy/docker-compose-test`
-6. Select the branch `main`
-7. Compose Path `./docker-compose.yml` and then save
+1. Create a new project.
+2. Create a new service `Compose` and select the Compose Type `Docker Compose`.
+3. Fork this repository: [Repo](https://github.com/Dokploy/docker-compose-test).
+4. Select Provider type: GitHub or Git.
+5. Select the repository: `Dokploy/docker-compose-test`.
+6. Select the branch: `main`.
+7. Set the Compose Path to `./docker-compose.yml` and save.
 ![Docker compose configuration](../../../assets/images/compose/setup.png)
 
-What are the things you need to add to your existing docker-compose.yml file
 
-1. Add the network `dokploy-network` to each service
-2. Add labels for traefik to make the service accessible through the domain
+### Updating Your `docker-compose.yml`
+
+Add the following to your existing `docker-compose.yml` file:
+
+1. Add the network `dokploy-network` to each service.
+2. Add labels for Traefik to make the service accessible through the domain.
 
 Example:
 
-We have this compose file lets modify it to make it work with dokploy
+Let's modify the following compose file to make it work with Dokploy:
 
 ```yaml
 version: "3"
@@ -53,7 +56,7 @@ networks:
 ```
 
 
-We added the network `dokploy-network` to each service and added labels for traefik to make the service accessible through the domain, this is the corrected version of the compose file.
+Updated version with dokploy-network and Traefik labels:
 
 ```yaml
 version: "3"
@@ -83,19 +86,22 @@ networks:
     external: true
 ```
 
-Make sure to point A record to the domain you want to use for your service.
+Make sure to point the A record to the domain you want to use for your service.
 
 ![Docker compose dokploy configuration](../../../assets/images/compose/domain.png)
 
-Then you are done to deploy the application, click on deploy and wait for the deployment to complete, then give 10 seconds to traefik generate the certificates and then you can access the application through the domain you have set.
+Deploy the application by clicking on "deploy" and wait for the deployment to complete. Then give Traefik about 10 seconds to generate the certificates. You can then access the application through the domain you have set.
 
 ![Application compose dokploy configuration](../../../assets/images/compose/application.png)
 
 Tips:
 
 
-1. Make sure to set unique name for each router `traefik.http.routers.<unique-name>` 
-2.  Make sure to set unique name for each service `traefik.http.services.<unique-name>`
-3. The network make sure to link to the dokploy network `dokploy-network`
-4. The labels make sure to set the entrypoint to websecure and the cert resolver to letsencrypt this will generate certificates.
+1. Set unique names for each router: `traefik.http.routers.<unique-name>` 
+2.  Set unique names for each service: `traefik.http.services.<unique-name>`
+3. Ensure the network is linked to the `dokploy-network`
+4. Set the entry point to websecure and the certificate resolver to letsencrypt to generate certificates.
+
+:::danger
+Don't set container_name property to the each service, it will cause issues with logs, metrics and other features
 
