@@ -50,3 +50,16 @@ You can see the last 10 logs of the build of your Compose file.
 2. Volumes: We provide a way to create files and folders on the server when you deploy your application. Every time you deploy an application, it will recreate the files with the specified content.
 
 ![Docker compose dokploy configuration](../../../assets/images/compose/overview.png)
+
+
+## Auto Deploy
+
+Set up automatic deployments:
+
+1. Navigate to the `deployments` tab and copy the `Webhook URL`.
+2. In your Git repository settings, paste this URL into the Webhook URL field.
+3. Make sure to select content type `application/json`.
+4. Choose the events that should trigger deployments, such as `Push`.
+5. Once configured, any specified action, like pushing a new commit, will automatically trigger a deployment.
+
+Dokploy supports webhooks from GitHub, GitLab, Bitbucket, Gitea.

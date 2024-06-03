@@ -36,8 +36,9 @@ For Docker deployments:
 Set up automatic deployments:
 
 1. Navigate to the `deployments` tab and copy the `Webhook URL`.
-2. In your Git provider's settings, paste this URL into the Webhook URL field.
-3. Choose the events that should trigger deployments, such as `Push`.
-4. Once configured, any specified action, like pushing a new commit, will automatically trigger a deployment.
+2. In your Git repository settings, paste this URL into the Webhook URL field.
+3. Make sure to select content type `application/json`.
+4. Choose the events that should trigger deployments, such as `Push`.
+5. Once configured, any specified action, like pushing a new commit, will automatically trigger a deployment.
 
 Dokploy supports webhooks from GitHub, GitLab, Bitbucket, Gitea, and DockerHub.
