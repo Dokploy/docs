@@ -195,6 +195,13 @@ export default defineConfig({
                 "zh-CN": "概述",
               },
               link: "/docker-compose/example",
+            },
+            {
+              label: "Templates",
+              translations: {
+                "zh-CN": "概述",
+              },
+              link: "/docker-compose/templates",
             }
 					],
 				},
