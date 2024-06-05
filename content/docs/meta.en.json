@@ -1,0 +1,13 @@
+{
+  "title": "Documentation",
+  "pages": [
+    "---Get Started---",
+    "guide/introduction",
+    "guide/installation",
+    "guide/reset-password",
+    "guide/uninstall",
+    "---Domain---",
+    "domain/web-domain-setup",
+    "domain/application-setup"
+  ]
+}

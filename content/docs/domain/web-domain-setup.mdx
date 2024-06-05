@@ -1,0 +1,11 @@
+---
+title: "Web Domain Setup"
+description: "Set up a web domain for your Dokploy account."
+---
+
+To set up a web domain for your Dokploy account, follow these steps:
+
+1. Log in to your VPS.
+2. Run `docker ps` to get the container ID of the dokploy container.
+3. Run `docker exec -it <container-id> bash -c "pnpm run web-domain-setup"` to open a shell in the dokploy container.
+4. It will display a random password. Copy it and use it to access again to the dashboard. 

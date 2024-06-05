@@ -1,23 +1,24 @@
 {
-  "name": "dokploy-docs",
-  "type": "module",
-  "version": "0.0.1",
+  "name": "example-i18n",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro check && astro build",
-    "preview": "astro preview",
-    "astro": "astro"
+    "build": "next build",
+    "dev": "next dev",
+    "start": "next start"
   },
   "dependencies": {
-    "@astrojs/check": "^0.6.0",
-    "@astrojs/partytown": "^2.1.0",
-    "@astrojs/starlight": "^0.22.2",
-    "@astrojs/starlight-tailwind": "^2.0.2",
-    "@astrojs/tailwind": "^5.1.0",
-    "astro": "^4.3.5",
-    "sharp": "^0.32.5",
-    "tailwindcss": "^3.4.3",
+    "fumadocs-core": "11.3.2",
+    "fumadocs-mdx": "8.2.27",
+    "fumadocs-ui": "11.3.2",
+    "next": "^14.2.3",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@types/mdx": "^2.0.13",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
     "typescript": "^5.4.5"
   }
 }
