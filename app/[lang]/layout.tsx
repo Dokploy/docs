@@ -5,7 +5,6 @@ import type { ReactNode } from "react";
 import { I18nProvider, LanguageSelect } from "fumadocs-ui/i18n";
 import { pageTree } from "@/app/source";
 import { DocsLayout } from "fumadocs-ui/layout";
-
 const inter = Inter({
 	subsets: ["latin"],
 });
