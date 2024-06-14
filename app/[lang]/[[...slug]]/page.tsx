@@ -1,7 +1,7 @@
 import { getLanguages, getPage, getPages } from "@/app/source";
 import type { Metadata } from "next";
 import { DocsPage, DocsBody } from "fumadocs-ui/page";
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect, redirect } from "next/navigation";
 
 export default async function Page({
 	params,
@@ -42,7 +42,9 @@ export function generateMetadata({
 }) {
 	const page = getPage(params.slug, params.lang);
 
-	if (page == null) notFound();
+	if (page == null) {
+		permanentRedirect("/get-started/introduction");
+	}
 
 	return {
 		title: page.data.title,
