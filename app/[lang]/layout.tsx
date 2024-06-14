@@ -17,7 +17,7 @@ const inter = Inter({
 	subsets: ["latin"],
 });
 
-export interface Mode {
+interface Mode {
 	param: string;
 	name: string;
 	package: string;
@@ -25,7 +25,7 @@ export interface Mode {
 	icon: LucideIcon;
 }
 
-export const modes: Mode[] = [
+const modes: Mode[] = [
 	{
 		param: "get-started/introduction",
 		name: "Core",
