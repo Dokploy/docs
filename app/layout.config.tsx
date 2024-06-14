@@ -6,7 +6,7 @@ export const Logo = () => {
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
 			viewBox="0 0 559 446"
-			className="h-10 w-10"
+			className="!size-8 lg:!size-10"
 		>
 			<path
 				className="fill-primary stroke-primary"
@@ -33,7 +33,7 @@ export const baseOptions: BaseLayoutProps = {
 		title: (
 			<>
 				<Logo />
-				<span className="[.uwu_&]:hidden max-md:[nav_&]:hidden">Dokploy</span>
+				<span className="text-foreground">Dokploy</span>
 			</>
 		),
 	},
