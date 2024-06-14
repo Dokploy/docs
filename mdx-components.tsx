@@ -7,7 +7,11 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
 		...defaultComponents,
 		...components,
 		ImageZoom,
-		p: ({ children }) => <p className="text-muted-foreground">{children}</p>,
-		li: ({ children }) => <li className="text-muted-foreground">{children}</li>,
+		p: ({ children }) => (
+			<p className="text-[#3E4342] dark:text-muted-foreground">{children}</p>
+		),
+		li: ({ children }) => (
+			<li className="text-[#3E4342] dark:text-muted-foreground">{children}</li>
+		),
 	};
 }
