@@ -26,22 +26,22 @@ export interface Mode {
 
 export const modes: Mode[] = [
 	{
-		param: "guide/introduction",
+		param: "get-started/introduction",
 		name: "Core",
 		package: "Dokploy",
 		description: "The core",
 		icon: LibraryIcon,
 	},
 	{
-		param: "ui",
-		name: "CLI",
+		param: "get-started/introduction",
+		name: "CLI (Soon)",
 		package: "fumadocs-ui",
 		description: "The CLI",
 		icon: LayoutIcon,
 	},
 	{
-		param: "",
-		name: "API",
+		param: "get-started/introduction",
+		name: "API (Soon)",
 		package: "fumadocs-mdx",
 		description: "The API",
 		icon: PaperclipIcon,
