@@ -6,6 +6,7 @@ import { RootProvider } from "fumadocs-ui/provider";
 import { Inter } from "next/font/google";
 import { baseOptions } from "../layout.config";
 import { RootToggle } from "fumadocs-ui/components/layout/root-toggle";
+import "../global.css";
 import {
 	LayoutIcon,
 	LibraryIcon,

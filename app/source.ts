@@ -5,7 +5,6 @@ import { languages } from "@/i18n";
 
 export const { getPage, getPages, pageTree, getLanguages } = loader({
 	baseUrl: "/",
-	rootDir: "",
 	languages,
 	source: createMDXSource(map),
 });
