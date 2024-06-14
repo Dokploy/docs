@@ -1,5 +1,5 @@
-import { defaultLanguage, languages } from "@/i18n";
 import { createI18nMiddleware } from "fumadocs-core/middleware";
+import { defaultLanguage, languages } from "./i18n";
 
 export default createI18nMiddleware({
 	languages,
