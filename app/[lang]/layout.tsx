@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import type { ReactNode } from "react";
 import { I18nProvider, LanguageSelect } from "fumadocs-ui/i18n";
 import { pageTree } from "@/app/source";
+import "../global.css";
 import { DocsLayout } from "fumadocs-ui/layout";
 const inter = Inter({
 	subsets: ["latin"],
@@ -40,16 +41,11 @@ export default function Layout({
 					<RootProvider>
 						<DocsLayout
 							tree={pageTree[params.lang]}
-							// links={[
-							// 	{
-							// 		text: "GitHub",
-							// 		// icon: GitHubIcon,
-							// 		url: "https://github.com/dokploy/dokploy",
-							// 	},
-							// ]}
 							nav={{
 								title: params.lang === "cn" ? "目錄" : "Dokploy",
 								url: `/${params.lang}`,
+								githubUrl: "https://github.com/dokploy/dokploy",
+								transparentMode: "none",
 							}}
 							sidebar={{ footer: <LanguageSelect /> }}
 						>

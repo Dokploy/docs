@@ -14,4 +14,11 @@
    
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 47.4% 11.2%;
+
+   
+  }
+  @layer base  {
+    html {
+      @apply bg-[#0B0D0E]
+    }
   }
