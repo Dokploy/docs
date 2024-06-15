@@ -1,9 +1,8 @@
 import type { MetadataRoute } from "next";
-import { baseUrl } from "@/utils/metadata";
+import { url } from "@/utils/metadata";
 import { getPages } from "./source";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-	const url = (path: string): string => new URL(path, baseUrl).toString();
 	return [
 		{
 			url: url("/"),

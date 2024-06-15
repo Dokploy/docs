@@ -13,6 +13,7 @@ import {
 	PaperclipIcon,
 	type LucideIcon,
 } from "lucide-react";
+import Head from "next/head";
 const inter = Inter({
 	subsets: ["latin"],
 });
@@ -62,6 +63,9 @@ export default function Layout({
 			className={inter.className}
 			suppressHydrationWarning
 		>
+			{/* <Head>
+				<link rel="icon" href="icon.svg" type="image/svg+xml" />
+			</Head> */}
 			<body>
 				<I18nProvider
 					locale={params.lang}
