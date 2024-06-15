@@ -13,6 +13,7 @@ import {
 	PaperclipIcon,
 	type LucideIcon,
 } from "lucide-react";
+import GoogleAnalytics from "@/components/analytics/google";
 const inter = Inter({
 	subsets: ["latin"],
 });
@@ -62,6 +63,7 @@ export default function Layout({
 			className={inter.className}
 			suppressHydrationWarning
 		>
+			<GoogleAnalytics />
 			<body>
 				<I18nProvider
 					locale={params.lang}
