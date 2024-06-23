@@ -5,12 +5,14 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev",
-    "start": "next start"
+    "start": "next start",
+    "build:docs": "tsx ./scripts/generate-docs.mts"
   },
   "dependencies": {
-    "fumadocs-core": "12.0.7",
-    "fumadocs-mdx": "8.2.31",
-    "fumadocs-ui": "12.0.7",
+    "fumadocs-core": "12.2.2",
+    "fumadocs-mdx": "8.2.33",
+    "fumadocs-openapi": "^3.1.2",
+    "fumadocs-ui": "12.2.2",
     "lucide-react": "^0.394.0",
     "next": "^14.1.0",
     "react": "^18.3.1",
@@ -18,6 +20,7 @@
     "react-ga4": "^2.1.0"
   },
   "devDependencies": {
+    "tsx":"4.15.7",
     "@biomejs/biome": "1.8.1",
     "@types/mdx": "^2.0.13",
     "@types/node": "^20.14.2",

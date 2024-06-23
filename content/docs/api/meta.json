@@ -1,0 +1,11 @@
+{
+  "title": "CLI",
+  "root": true,
+  "pages": [
+    "---Get Started---",
+    "index",
+    "api-reference",
+    "---API---",
+    "reference-api"
+  ]
+}

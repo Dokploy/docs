@@ -44,7 +44,7 @@ export function generateMetadata({
 	const page = getPage(params.slug, params.lang);
 
 	if (page == null) {
-		permanentRedirect("/get-started/introduction");
+		permanentRedirect("/docs/core/get-started/introduction");
 	}
 	return {
 		title: page.data.title,

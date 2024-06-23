@@ -8,9 +8,9 @@ import { baseOptions } from "../layout.config";
 import { RootToggle } from "fumadocs-ui/components/layout/root-toggle";
 import "../global.css";
 import {
-	LayoutIcon,
+	TerminalIcon,
 	LibraryIcon,
-	PaperclipIcon,
+	PlugZapIcon,
 	type LucideIcon,
 } from "lucide-react";
 import GoogleAnalytics from "@/components/analytics/google";
@@ -28,25 +28,25 @@ interface Mode {
 
 const modes: Mode[] = [
 	{
-		param: "get-started/introduction",
+		param: "docs",
 		name: "Core",
 		package: "Dokploy",
 		description: "The core",
 		icon: LibraryIcon,
 	},
 	{
-		param: "get-started/introduction",
-		name: "CLI (Soon)",
+		param: "cli",
+		name: "CLI",
 		package: "fumadocs-ui",
-		description: "The CLI",
-		icon: LayoutIcon,
+		description: "Interactive CLI",
+		icon: TerminalIcon,
 	},
 	{
-		param: "get-started/introduction",
-		name: "API (Soon)",
+		param: "api",
+		name: "API",
 		package: "fumadocs-mdx",
-		description: "The API",
-		icon: PaperclipIcon,
+		description: "API Documentation",
+		icon: PlugZapIcon,
 	},
 ];
 
@@ -93,23 +93,26 @@ export default function Layout({
 								transparentMode: "none",
 							}}
 							sidebar={{
-								defaultOpenLevel: 0,
+								// defaultOpenLevel: 0,
+
 								banner: (
 									<RootToggle
-										options={modes.map((mode) => ({
-											url: `/${mode.param}`,
-											icon: (
-												<mode.icon
-													className="size-9 shrink-0 rounded-md bg-gradient-to-t from-background/80 p-1.5"
-													style={{
-														backgroundColor: `hsl(var(--${mode.param}-color)/.3)`,
-														color: `hsl(var(--${mode.param}-color))`,
-													}}
-												/>
-											),
-											title: mode.name,
-											description: mode.description,
-										}))}
+										options={modes.map((mode) => {
+											return {
+												url: `/${params.lang}/docs/${mode.param}`,
+												icon: (
+													<mode.icon
+														className="size-9 shrink-0 rounded-md bg-gradient-to-t from-background/80 p-1.5"
+														style={{
+															backgroundColor: `hsl(var(--${mode.param}-color)/.3)`,
+															color: `hsl(var(--${mode.param}-color))`,
+														}}
+													/>
+												),
+												title: mode.name,
+												description: mode.description,
+											};
+										})}
 									/>
 								),
 							}}

@@ -1,0 +1,8 @@
+{
+  "title": "CLI",
+  "root": true,
+  "pages": [
+    "---Get Started---",
+    "index"
+  ]
+}
