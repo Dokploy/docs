@@ -83,7 +83,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/mysql.create" \
+curl -X POST "http://localhost:3000/api/trpc/mysql.create" \
   -d '{
   "name": "string",
   "appName": "string",
@@ -102,7 +102,7 @@ curl -X POST "http://localhost:3000/mysql.create" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/mysql.create", {
+fetch("http://localhost:3000/api/trpc/mysql.create", {
   method: "POST"
 });
 ```
@@ -191,7 +191,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X GET "http://localhost:3000/mysql.one"
+curl -X GET "http://localhost:3000/api/trpc/mysql.one?mysqlId=string"
 ```
 
 </Request>
@@ -199,7 +199,7 @@ curl -X GET "http://localhost:3000/mysql.one"
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/mysql.one", {
+fetch("http://localhost:3000/api/trpc/mysql.one?mysqlId=string", {
   method: "GET"
 });
 ```
@@ -288,7 +288,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/mysql.start" \
+curl -X POST "http://localhost:3000/api/trpc/mysql.start" \
   -d '{
   "mysqlId": "string"
 }'
@@ -299,7 +299,7 @@ curl -X POST "http://localhost:3000/mysql.start" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/mysql.start", {
+fetch("http://localhost:3000/api/trpc/mysql.start", {
   method: "POST"
 });
 ```
@@ -388,7 +388,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/mysql.stop" \
+curl -X POST "http://localhost:3000/api/trpc/mysql.stop" \
   -d '{
   "mysqlId": "string"
 }'
@@ -399,7 +399,7 @@ curl -X POST "http://localhost:3000/mysql.stop" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/mysql.stop", {
+fetch("http://localhost:3000/api/trpc/mysql.stop", {
   method: "POST"
 });
 ```
@@ -492,7 +492,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/mysql.saveExternalPort" \
+curl -X POST "http://localhost:3000/api/trpc/mysql.saveExternalPort" \
   -d '{
   "mysqlId": "string",
   "externalPort": 0
@@ -504,7 +504,7 @@ curl -X POST "http://localhost:3000/mysql.saveExternalPort" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/mysql.saveExternalPort", {
+fetch("http://localhost:3000/api/trpc/mysql.saveExternalPort", {
   method: "POST"
 });
 ```
@@ -593,7 +593,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/mysql.deploy" \
+curl -X POST "http://localhost:3000/api/trpc/mysql.deploy" \
   -d '{
   "mysqlId": "string"
 }'
@@ -604,7 +604,7 @@ curl -X POST "http://localhost:3000/mysql.deploy" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/mysql.deploy", {
+fetch("http://localhost:3000/api/trpc/mysql.deploy", {
   method: "POST"
 });
 ```
@@ -699,7 +699,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/mysql.changeStatus" \
+curl -X POST "http://localhost:3000/api/trpc/mysql.changeStatus" \
   -d '{
   "mysqlId": "string",
   "applicationStatus": "idle"
@@ -711,7 +711,7 @@ curl -X POST "http://localhost:3000/mysql.changeStatus" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/mysql.changeStatus", {
+fetch("http://localhost:3000/api/trpc/mysql.changeStatus", {
   method: "POST"
 });
 ```
@@ -806,7 +806,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/mysql.reload" \
+curl -X POST "http://localhost:3000/api/trpc/mysql.reload" \
   -d '{
   "mysqlId": "string",
   "appName": "string"
@@ -818,7 +818,7 @@ curl -X POST "http://localhost:3000/mysql.reload" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/mysql.reload", {
+fetch("http://localhost:3000/api/trpc/mysql.reload", {
   method: "POST"
 });
 ```
@@ -907,7 +907,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/mysql.remove" \
+curl -X POST "http://localhost:3000/api/trpc/mysql.remove" \
   -d '{
   "mysqlId": "string"
 }'
@@ -918,7 +918,7 @@ curl -X POST "http://localhost:3000/mysql.remove" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/mysql.remove", {
+fetch("http://localhost:3000/api/trpc/mysql.remove", {
   method: "POST"
 });
 ```
@@ -1011,7 +1011,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/mysql.saveEnvironment" \
+curl -X POST "http://localhost:3000/api/trpc/mysql.saveEnvironment" \
   -d '{
   "mysqlId": "string",
   "env": "string"
@@ -1023,7 +1023,7 @@ curl -X POST "http://localhost:3000/mysql.saveEnvironment" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/mysql.saveEnvironment", {
+fetch("http://localhost:3000/api/trpc/mysql.saveEnvironment", {
   method: "POST"
 });
 ```
@@ -1198,7 +1198,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/mysql.update" \
+curl -X POST "http://localhost:3000/api/trpc/mysql.update" \
   -d '{
   "mysqlId": "string",
   "name": "string",
@@ -1227,7 +1227,7 @@ curl -X POST "http://localhost:3000/mysql.update" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/mysql.update", {
+fetch("http://localhost:3000/api/trpc/mysql.update", {
   method: "POST"
 });
 ```

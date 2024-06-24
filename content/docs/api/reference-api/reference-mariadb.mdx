@@ -83,7 +83,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/mariadb.create" \
+curl -X POST "http://localhost:3000/api/trpc/mariadb.create" \
   -d '{
   "name": "string",
   "appName": "string",
@@ -102,7 +102,7 @@ curl -X POST "http://localhost:3000/mariadb.create" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/mariadb.create", {
+fetch("http://localhost:3000/api/trpc/mariadb.create", {
   method: "POST"
 });
 ```
@@ -191,7 +191,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X GET "http://localhost:3000/mariadb.one"
+curl -X GET "http://localhost:3000/api/trpc/mariadb.one?mariadbId=string"
 ```
 
 </Request>
@@ -199,7 +199,7 @@ curl -X GET "http://localhost:3000/mariadb.one"
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/mariadb.one", {
+fetch("http://localhost:3000/api/trpc/mariadb.one?mariadbId=string", {
   method: "GET"
 });
 ```
@@ -288,7 +288,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/mariadb.start" \
+curl -X POST "http://localhost:3000/api/trpc/mariadb.start" \
   -d '{
   "mariadbId": "string"
 }'
@@ -299,7 +299,7 @@ curl -X POST "http://localhost:3000/mariadb.start" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/mariadb.start", {
+fetch("http://localhost:3000/api/trpc/mariadb.start", {
   method: "POST"
 });
 ```
@@ -388,7 +388,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/mariadb.stop" \
+curl -X POST "http://localhost:3000/api/trpc/mariadb.stop" \
   -d '{
   "mariadbId": "string"
 }'
@@ -399,7 +399,7 @@ curl -X POST "http://localhost:3000/mariadb.stop" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/mariadb.stop", {
+fetch("http://localhost:3000/api/trpc/mariadb.stop", {
   method: "POST"
 });
 ```
@@ -492,7 +492,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/mariadb.saveExternalPort" \
+curl -X POST "http://localhost:3000/api/trpc/mariadb.saveExternalPort" \
   -d '{
   "mariadbId": "string",
   "externalPort": 0
@@ -504,7 +504,7 @@ curl -X POST "http://localhost:3000/mariadb.saveExternalPort" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/mariadb.saveExternalPort", {
+fetch("http://localhost:3000/api/trpc/mariadb.saveExternalPort", {
   method: "POST"
 });
 ```
@@ -593,7 +593,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/mariadb.deploy" \
+curl -X POST "http://localhost:3000/api/trpc/mariadb.deploy" \
   -d '{
   "mariadbId": "string"
 }'
@@ -604,7 +604,7 @@ curl -X POST "http://localhost:3000/mariadb.deploy" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/mariadb.deploy", {
+fetch("http://localhost:3000/api/trpc/mariadb.deploy", {
   method: "POST"
 });
 ```
@@ -699,7 +699,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/mariadb.changeStatus" \
+curl -X POST "http://localhost:3000/api/trpc/mariadb.changeStatus" \
   -d '{
   "mariadbId": "string",
   "applicationStatus": "idle"
@@ -711,7 +711,7 @@ curl -X POST "http://localhost:3000/mariadb.changeStatus" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/mariadb.changeStatus", {
+fetch("http://localhost:3000/api/trpc/mariadb.changeStatus", {
   method: "POST"
 });
 ```
@@ -800,7 +800,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/mariadb.remove" \
+curl -X POST "http://localhost:3000/api/trpc/mariadb.remove" \
   -d '{
   "mariadbId": "string"
 }'
@@ -811,7 +811,7 @@ curl -X POST "http://localhost:3000/mariadb.remove" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/mariadb.remove", {
+fetch("http://localhost:3000/api/trpc/mariadb.remove", {
   method: "POST"
 });
 ```
@@ -904,7 +904,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/mariadb.saveEnvironment" \
+curl -X POST "http://localhost:3000/api/trpc/mariadb.saveEnvironment" \
   -d '{
   "mariadbId": "string",
   "env": "string"
@@ -916,7 +916,7 @@ curl -X POST "http://localhost:3000/mariadb.saveEnvironment" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/mariadb.saveEnvironment", {
+fetch("http://localhost:3000/api/trpc/mariadb.saveEnvironment", {
   method: "POST"
 });
 ```
@@ -1011,7 +1011,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/mariadb.reload" \
+curl -X POST "http://localhost:3000/api/trpc/mariadb.reload" \
   -d '{
   "mariadbId": "string",
   "appName": "string"
@@ -1023,7 +1023,7 @@ curl -X POST "http://localhost:3000/mariadb.reload" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/mariadb.reload", {
+fetch("http://localhost:3000/api/trpc/mariadb.reload", {
   method: "POST"
 });
 ```
@@ -1198,7 +1198,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/mariadb.update" \
+curl -X POST "http://localhost:3000/api/trpc/mariadb.update" \
   -d '{
   "mariadbId": "string",
   "name": "string",
@@ -1227,7 +1227,7 @@ curl -X POST "http://localhost:3000/mariadb.update" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/mariadb.update", {
+fetch("http://localhost:3000/api/trpc/mariadb.update", {
   method: "POST"
 });
 ```

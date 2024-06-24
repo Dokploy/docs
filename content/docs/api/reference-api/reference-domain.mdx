@@ -67,7 +67,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/domain.create" \
+curl -X POST "http://localhost:3000/api/trpc/domain.create" \
   -d '{
   "host": "string",
   "path": "string",
@@ -83,7 +83,7 @@ curl -X POST "http://localhost:3000/domain.create" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/domain.create", {
+fetch("http://localhost:3000/api/trpc/domain.create", {
   method: "POST"
 });
 ```
@@ -172,7 +172,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X GET "http://localhost:3000/domain.byApplicationId"
+curl -X GET "http://localhost:3000/api/trpc/domain.byApplicationId?applicationId=string"
 ```
 
 </Request>
@@ -180,7 +180,7 @@ curl -X GET "http://localhost:3000/domain.byApplicationId"
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/domain.byApplicationId", {
+fetch("http://localhost:3000/api/trpc/domain.byApplicationId?applicationId=string", {
   method: "GET"
 });
 ```
@@ -297,7 +297,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/domain.update" \
+curl -X POST "http://localhost:3000/api/trpc/domain.update" \
   -d '{
   "domainId": "string",
   "host": "string",
@@ -313,7 +313,7 @@ curl -X POST "http://localhost:3000/domain.update" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/domain.update", {
+fetch("http://localhost:3000/api/trpc/domain.update", {
   method: "POST"
 });
 ```
@@ -404,7 +404,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X GET "http://localhost:3000/domain.one"
+curl -X GET "http://localhost:3000/api/trpc/domain.one?domainId=string"
 ```
 
 </Request>
@@ -412,7 +412,7 @@ curl -X GET "http://localhost:3000/domain.one"
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/domain.one", {
+fetch("http://localhost:3000/api/trpc/domain.one?domainId=string", {
   method: "GET"
 });
 ```
@@ -503,7 +503,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/domain.delete" \
+curl -X POST "http://localhost:3000/api/trpc/domain.delete" \
   -d '{
   "domainId": "string"
 }'
@@ -514,7 +514,7 @@ curl -X POST "http://localhost:3000/domain.delete" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/domain.delete", {
+fetch("http://localhost:3000/api/trpc/domain.delete", {
   method: "POST"
 });
 ```

@@ -35,7 +35,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X GET "http://localhost:3000/user.all"
+curl -X GET "http://localhost:3000/api/trpc/user.all"
 ```
 
 </Request>
@@ -43,7 +43,7 @@ curl -X GET "http://localhost:3000/user.all"
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/user.all", {
+fetch("http://localhost:3000/api/trpc/user.all", {
   method: "GET"
 });
 ```
@@ -134,7 +134,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X GET "http://localhost:3000/user.byAuthId"
+curl -X GET "http://localhost:3000/api/trpc/user.byAuthId?authId=string"
 ```
 
 </Request>
@@ -142,7 +142,7 @@ curl -X GET "http://localhost:3000/user.byAuthId"
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/user.byAuthId", {
+fetch("http://localhost:3000/api/trpc/user.byAuthId?authId=string", {
   method: "GET"
 });
 ```
@@ -233,7 +233,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X GET "http://localhost:3000/user.byUserId"
+curl -X GET "http://localhost:3000/api/trpc/user.byUserId?userId=string"
 ```
 
 </Request>
@@ -241,7 +241,7 @@ curl -X GET "http://localhost:3000/user.byUserId"
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/user.byUserId", {
+fetch("http://localhost:3000/api/trpc/user.byUserId?userId=string", {
   method: "GET"
 });
 ```

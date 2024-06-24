@@ -55,7 +55,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/application.create" \
+curl -X POST "http://localhost:3000/api/trpc/application.create" \
   -d '{
   "name": "string",
   "appName": "string",
@@ -69,7 +69,7 @@ curl -X POST "http://localhost:3000/application.create" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/application.create", {
+fetch("http://localhost:3000/api/trpc/application.create", {
   method: "POST"
 });
 ```
@@ -158,7 +158,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X GET "http://localhost:3000/application.one"
+curl -X GET "http://localhost:3000/api/trpc/application.one?applicationId=string"
 ```
 
 </Request>
@@ -166,7 +166,7 @@ curl -X GET "http://localhost:3000/application.one"
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/application.one", {
+fetch("http://localhost:3000/api/trpc/application.one?applicationId=string", {
   method: "GET"
 });
 ```
@@ -259,7 +259,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/application.reload" \
+curl -X POST "http://localhost:3000/api/trpc/application.reload" \
   -d '{
   "appName": "string",
   "applicationId": "string"
@@ -271,7 +271,7 @@ curl -X POST "http://localhost:3000/application.reload" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/application.reload", {
+fetch("http://localhost:3000/api/trpc/application.reload", {
   method: "POST"
 });
 ```
@@ -360,7 +360,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/application.delete" \
+curl -X POST "http://localhost:3000/api/trpc/application.delete" \
   -d '{
   "applicationId": "string"
 }'
@@ -371,7 +371,7 @@ curl -X POST "http://localhost:3000/application.delete" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/application.delete", {
+fetch("http://localhost:3000/api/trpc/application.delete", {
   method: "POST"
 });
 ```
@@ -460,7 +460,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/application.stop" \
+curl -X POST "http://localhost:3000/api/trpc/application.stop" \
   -d '{
   "applicationId": "string"
 }'
@@ -471,7 +471,7 @@ curl -X POST "http://localhost:3000/application.stop" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/application.stop", {
+fetch("http://localhost:3000/api/trpc/application.stop", {
   method: "POST"
 });
 ```
@@ -560,7 +560,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/application.start" \
+curl -X POST "http://localhost:3000/api/trpc/application.start" \
   -d '{
   "applicationId": "string"
 }'
@@ -571,7 +571,7 @@ curl -X POST "http://localhost:3000/application.start" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/application.start", {
+fetch("http://localhost:3000/api/trpc/application.start", {
   method: "POST"
 });
 ```
@@ -660,7 +660,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/application.redeploy" \
+curl -X POST "http://localhost:3000/api/trpc/application.redeploy" \
   -d '{
   "applicationId": "string"
 }'
@@ -671,7 +671,7 @@ curl -X POST "http://localhost:3000/application.redeploy" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/application.redeploy", {
+fetch("http://localhost:3000/api/trpc/application.redeploy", {
   method: "POST"
 });
 ```
@@ -764,7 +764,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/application.saveEnvironment" \
+curl -X POST "http://localhost:3000/api/trpc/application.saveEnvironment" \
   -d '{
   "applicationId": "string",
   "env": "string"
@@ -776,7 +776,7 @@ curl -X POST "http://localhost:3000/application.saveEnvironment" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/application.saveEnvironment", {
+fetch("http://localhost:3000/api/trpc/application.saveEnvironment", {
   method: "POST"
 });
 ```
@@ -875,7 +875,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/application.saveBuildType" \
+curl -X POST "http://localhost:3000/api/trpc/application.saveBuildType" \
   -d '{
   "applicationId": "string",
   "buildType": "dockerfile",
@@ -888,7 +888,7 @@ curl -X POST "http://localhost:3000/application.saveBuildType" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/application.saveBuildType", {
+fetch("http://localhost:3000/api/trpc/application.saveBuildType", {
   method: "POST"
 });
 ```
@@ -993,7 +993,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/application.saveGithubProvider" \
+curl -X POST "http://localhost:3000/api/trpc/application.saveGithubProvider" \
   -d '{
   "applicationId": "string",
   "repository": "string",
@@ -1008,7 +1008,7 @@ curl -X POST "http://localhost:3000/application.saveGithubProvider" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/application.saveGithubProvider", {
+fetch("http://localhost:3000/api/trpc/application.saveGithubProvider", {
   method: "POST"
 });
 ```
@@ -1109,7 +1109,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/application.saveDockerProvider" \
+curl -X POST "http://localhost:3000/api/trpc/application.saveDockerProvider" \
   -d '{
   "dockerImage": "string",
   "applicationId": "string",
@@ -1123,7 +1123,7 @@ curl -X POST "http://localhost:3000/application.saveDockerProvider" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/application.saveDockerProvider", {
+fetch("http://localhost:3000/api/trpc/application.saveDockerProvider", {
   method: "POST"
 });
 ```
@@ -1224,7 +1224,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/application.saveGitProdiver" \
+curl -X POST "http://localhost:3000/api/trpc/application.saveGitProdiver" \
   -d '{
   "customGitBranch": "string",
   "applicationId": "string",
@@ -1238,7 +1238,7 @@ curl -X POST "http://localhost:3000/application.saveGitProdiver" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/application.saveGitProdiver", {
+fetch("http://localhost:3000/api/trpc/application.saveGitProdiver", {
   method: "POST"
 });
 ```
@@ -1327,7 +1327,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/application.generateSSHKey" \
+curl -X POST "http://localhost:3000/api/trpc/application.generateSSHKey" \
   -d '{
   "applicationId": "string"
 }'
@@ -1338,7 +1338,7 @@ curl -X POST "http://localhost:3000/application.generateSSHKey" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/application.generateSSHKey", {
+fetch("http://localhost:3000/api/trpc/application.generateSSHKey", {
   method: "POST"
 });
 ```
@@ -1427,7 +1427,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/application.removeSSHKey" \
+curl -X POST "http://localhost:3000/api/trpc/application.removeSSHKey" \
   -d '{
   "applicationId": "string"
 }'
@@ -1438,7 +1438,7 @@ curl -X POST "http://localhost:3000/application.removeSSHKey" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/application.removeSSHKey", {
+fetch("http://localhost:3000/api/trpc/application.removeSSHKey", {
   method: "POST"
 });
 ```
@@ -1527,7 +1527,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/application.markRunning" \
+curl -X POST "http://localhost:3000/api/trpc/application.markRunning" \
   -d '{
   "applicationId": "string"
 }'
@@ -1538,7 +1538,7 @@ curl -X POST "http://localhost:3000/application.markRunning" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/application.markRunning", {
+fetch("http://localhost:3000/api/trpc/application.markRunning", {
   method: "POST"
 });
 ```
@@ -2025,7 +2025,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/application.update" \
+curl -X POST "http://localhost:3000/api/trpc/application.update" \
   -d '{
   "applicationId": "string",
   "name": "string",
@@ -2143,7 +2143,7 @@ curl -X POST "http://localhost:3000/application.update" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/application.update", {
+fetch("http://localhost:3000/api/trpc/application.update", {
   method: "POST"
 });
 ```
@@ -2232,7 +2232,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/application.refreshToken" \
+curl -X POST "http://localhost:3000/api/trpc/application.refreshToken" \
   -d '{
   "applicationId": "string"
 }'
@@ -2243,7 +2243,7 @@ curl -X POST "http://localhost:3000/application.refreshToken" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/application.refreshToken", {
+fetch("http://localhost:3000/api/trpc/application.refreshToken", {
   method: "POST"
 });
 ```
@@ -2332,7 +2332,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/application.deploy" \
+curl -X POST "http://localhost:3000/api/trpc/application.deploy" \
   -d '{
   "applicationId": "string"
 }'
@@ -2343,7 +2343,7 @@ curl -X POST "http://localhost:3000/application.deploy" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/application.deploy", {
+fetch("http://localhost:3000/api/trpc/application.deploy", {
   method: "POST"
 });
 ```
@@ -2432,7 +2432,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/application.cleanQueues" \
+curl -X POST "http://localhost:3000/api/trpc/application.cleanQueues" \
   -d '{
   "applicationId": "string"
 }'
@@ -2443,7 +2443,7 @@ curl -X POST "http://localhost:3000/application.cleanQueues" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/application.cleanQueues", {
+fetch("http://localhost:3000/api/trpc/application.cleanQueues", {
   method: "POST"
 });
 ```
@@ -2532,7 +2532,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X GET "http://localhost:3000/application.readTraefikConfig"
+curl -X GET "http://localhost:3000/api/trpc/application.readTraefikConfig?applicationId=string"
 ```
 
 </Request>
@@ -2540,7 +2540,7 @@ curl -X GET "http://localhost:3000/application.readTraefikConfig"
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/application.readTraefikConfig", {
+fetch("http://localhost:3000/api/trpc/application.readTraefikConfig?applicationId=string", {
   method: "GET"
 });
 ```
@@ -2633,7 +2633,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/application.updateTraefikConfig" \
+curl -X POST "http://localhost:3000/api/trpc/application.updateTraefikConfig" \
   -d '{
   "applicationId": "string",
   "traefikConfig": "string"
@@ -2645,7 +2645,7 @@ curl -X POST "http://localhost:3000/application.updateTraefikConfig" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/application.updateTraefikConfig", {
+fetch("http://localhost:3000/api/trpc/application.updateTraefikConfig", {
   method: "POST"
 });
 ```
@@ -2734,7 +2734,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X GET "http://localhost:3000/application.readAppMonitoring"
+curl -X GET "http://localhost:3000/api/trpc/application.readAppMonitoring?appName=string"
 ```
 
 </Request>
@@ -2742,7 +2742,7 @@ curl -X GET "http://localhost:3000/application.readAppMonitoring"
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/application.readAppMonitoring", {
+fetch("http://localhost:3000/api/trpc/application.readAppMonitoring?appName=string", {
   method: "GET"
 });
 ```

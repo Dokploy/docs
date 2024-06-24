@@ -67,7 +67,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/certificates.create" \
+curl -X POST "http://localhost:3000/api/trpc/certificates.create" \
   -d '{
   "certificateId": "string",
   "name": "string",
@@ -83,7 +83,7 @@ curl -X POST "http://localhost:3000/certificates.create" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/certificates.create", {
+fetch("http://localhost:3000/api/trpc/certificates.create", {
   method: "POST"
 });
 ```
@@ -174,7 +174,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X GET "http://localhost:3000/certificates.one"
+curl -X GET "http://localhost:3000/api/trpc/certificates.one?certificateId=string"
 ```
 
 </Request>
@@ -182,7 +182,7 @@ curl -X GET "http://localhost:3000/certificates.one"
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/certificates.one", {
+fetch("http://localhost:3000/api/trpc/certificates.one?certificateId=string", {
   method: "GET"
 });
 ```
@@ -273,7 +273,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/certificates.remove" \
+curl -X POST "http://localhost:3000/api/trpc/certificates.remove" \
   -d '{
   "certificateId": "string"
 }'
@@ -284,7 +284,7 @@ curl -X POST "http://localhost:3000/certificates.remove" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/certificates.remove", {
+fetch("http://localhost:3000/api/trpc/certificates.remove", {
   method: "POST"
 });
 ```
@@ -367,7 +367,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X GET "http://localhost:3000/certificates.all"
+curl -X GET "http://localhost:3000/api/trpc/certificates.all"
 ```
 
 </Request>
@@ -375,7 +375,7 @@ curl -X GET "http://localhost:3000/certificates.all"
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/certificates.all", {
+fetch("http://localhost:3000/api/trpc/certificates.all", {
   method: "GET"
 });
 ```

@@ -35,7 +35,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X GET "http://localhost:3000/admin.one"
+curl -X GET "http://localhost:3000/api/trpc/admin.one"
 ```
 
 </Request>
@@ -43,7 +43,7 @@ curl -X GET "http://localhost:3000/admin.one"
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/admin.one", {
+fetch("http://localhost:3000/api/trpc/admin.one", {
   method: "GET"
 });
 ```
@@ -134,7 +134,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/admin.createUserInvitation" \
+curl -X POST "http://localhost:3000/api/trpc/admin.createUserInvitation" \
   -d '{
   "email": "user@example.com"
 }'
@@ -145,7 +145,7 @@ curl -X POST "http://localhost:3000/admin.createUserInvitation" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/admin.createUserInvitation", {
+fetch("http://localhost:3000/api/trpc/admin.createUserInvitation", {
   method: "POST"
 });
 ```
@@ -236,7 +236,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/admin.removeUser" \
+curl -X POST "http://localhost:3000/api/trpc/admin.removeUser" \
   -d '{
   "authId": "string"
 }'
@@ -247,7 +247,7 @@ curl -X POST "http://localhost:3000/admin.removeUser" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/admin.removeUser", {
+fetch("http://localhost:3000/api/trpc/admin.removeUser", {
   method: "POST"
 });
 ```
@@ -338,7 +338,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X GET "http://localhost:3000/admin.getUserByToken"
+curl -X GET "http://localhost:3000/api/trpc/admin.getUserByToken?token=string"
 ```
 
 </Request>
@@ -346,7 +346,7 @@ curl -X GET "http://localhost:3000/admin.getUserByToken"
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/admin.getUserByToken", {
+fetch("http://localhost:3000/api/trpc/admin.getUserByToken?token=string", {
   method: "GET"
 });
 ```
@@ -473,7 +473,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/admin.assignPermissions" \
+curl -X POST "http://localhost:3000/api/trpc/admin.assignPermissions" \
   -d '{
   "userId": "string",
   "canCreateProjects": true,
@@ -497,7 +497,7 @@ curl -X POST "http://localhost:3000/admin.assignPermissions" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/admin.assignPermissions", {
+fetch("http://localhost:3000/api/trpc/admin.assignPermissions", {
   method: "POST"
 });
 ```
@@ -580,7 +580,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/admin.cleanGithubApp"
+curl -X POST "http://localhost:3000/api/trpc/admin.cleanGithubApp"
 ```
 
 </Request>
@@ -588,7 +588,7 @@ curl -X POST "http://localhost:3000/admin.cleanGithubApp"
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/admin.cleanGithubApp", {
+fetch("http://localhost:3000/api/trpc/admin.cleanGithubApp", {
   method: "POST"
 });
 ```
@@ -671,7 +671,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X GET "http://localhost:3000/admin.getRepositories"
+curl -X GET "http://localhost:3000/api/trpc/admin.getRepositories"
 ```
 
 </Request>
@@ -679,7 +679,7 @@ curl -X GET "http://localhost:3000/admin.getRepositories"
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/admin.getRepositories", {
+fetch("http://localhost:3000/api/trpc/admin.getRepositories", {
   method: "GET"
 });
 ```
@@ -776,7 +776,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X GET "http://localhost:3000/admin.getBranches"
+curl -X GET "http://localhost:3000/api/trpc/admin.getBranches?repo=string&owner=string"
 ```
 
 </Request>
@@ -784,7 +784,7 @@ curl -X GET "http://localhost:3000/admin.getBranches"
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/admin.getBranches", {
+fetch("http://localhost:3000/api/trpc/admin.getBranches?repo=string&owner=string", {
   method: "GET"
 });
 ```
@@ -867,7 +867,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X GET "http://localhost:3000/admin.haveGithubConfigured"
+curl -X GET "http://localhost:3000/api/trpc/admin.haveGithubConfigured"
 ```
 
 </Request>
@@ -875,7 +875,7 @@ curl -X GET "http://localhost:3000/admin.haveGithubConfigured"
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/admin.haveGithubConfigured", {
+fetch("http://localhost:3000/api/trpc/admin.haveGithubConfigured", {
   method: "GET"
 });
 ```

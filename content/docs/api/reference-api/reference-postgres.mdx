@@ -77,7 +77,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/postgres.create" \
+curl -X POST "http://localhost:3000/api/trpc/postgres.create" \
   -d '{
   "name": "string",
   "appName": "string",
@@ -95,7 +95,7 @@ curl -X POST "http://localhost:3000/postgres.create" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/postgres.create", {
+fetch("http://localhost:3000/api/trpc/postgres.create", {
   method: "POST"
 });
 ```
@@ -184,7 +184,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X GET "http://localhost:3000/postgres.one"
+curl -X GET "http://localhost:3000/api/trpc/postgres.one?postgresId=string"
 ```
 
 </Request>
@@ -192,7 +192,7 @@ curl -X GET "http://localhost:3000/postgres.one"
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/postgres.one", {
+fetch("http://localhost:3000/api/trpc/postgres.one?postgresId=string", {
   method: "GET"
 });
 ```
@@ -281,7 +281,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/postgres.start" \
+curl -X POST "http://localhost:3000/api/trpc/postgres.start" \
   -d '{
   "postgresId": "string"
 }'
@@ -292,7 +292,7 @@ curl -X POST "http://localhost:3000/postgres.start" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/postgres.start", {
+fetch("http://localhost:3000/api/trpc/postgres.start", {
   method: "POST"
 });
 ```
@@ -381,7 +381,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/postgres.stop" \
+curl -X POST "http://localhost:3000/api/trpc/postgres.stop" \
   -d '{
   "postgresId": "string"
 }'
@@ -392,7 +392,7 @@ curl -X POST "http://localhost:3000/postgres.stop" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/postgres.stop", {
+fetch("http://localhost:3000/api/trpc/postgres.stop", {
   method: "POST"
 });
 ```
@@ -485,7 +485,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/postgres.saveExternalPort" \
+curl -X POST "http://localhost:3000/api/trpc/postgres.saveExternalPort" \
   -d '{
   "postgresId": "string",
   "externalPort": 0
@@ -497,7 +497,7 @@ curl -X POST "http://localhost:3000/postgres.saveExternalPort" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/postgres.saveExternalPort", {
+fetch("http://localhost:3000/api/trpc/postgres.saveExternalPort", {
   method: "POST"
 });
 ```
@@ -586,7 +586,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/postgres.deploy" \
+curl -X POST "http://localhost:3000/api/trpc/postgres.deploy" \
   -d '{
   "postgresId": "string"
 }'
@@ -597,7 +597,7 @@ curl -X POST "http://localhost:3000/postgres.deploy" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/postgres.deploy", {
+fetch("http://localhost:3000/api/trpc/postgres.deploy", {
   method: "POST"
 });
 ```
@@ -692,7 +692,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/postgres.changeStatus" \
+curl -X POST "http://localhost:3000/api/trpc/postgres.changeStatus" \
   -d '{
   "postgresId": "string",
   "applicationStatus": "idle"
@@ -704,7 +704,7 @@ curl -X POST "http://localhost:3000/postgres.changeStatus" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/postgres.changeStatus", {
+fetch("http://localhost:3000/api/trpc/postgres.changeStatus", {
   method: "POST"
 });
 ```
@@ -793,7 +793,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/postgres.remove" \
+curl -X POST "http://localhost:3000/api/trpc/postgres.remove" \
   -d '{
   "postgresId": "string"
 }'
@@ -804,7 +804,7 @@ curl -X POST "http://localhost:3000/postgres.remove" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/postgres.remove", {
+fetch("http://localhost:3000/api/trpc/postgres.remove", {
   method: "POST"
 });
 ```
@@ -897,7 +897,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/postgres.saveEnvironment" \
+curl -X POST "http://localhost:3000/api/trpc/postgres.saveEnvironment" \
   -d '{
   "postgresId": "string",
   "env": "string"
@@ -909,7 +909,7 @@ curl -X POST "http://localhost:3000/postgres.saveEnvironment" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/postgres.saveEnvironment", {
+fetch("http://localhost:3000/api/trpc/postgres.saveEnvironment", {
   method: "POST"
 });
 ```
@@ -1002,7 +1002,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/postgres.reload" \
+curl -X POST "http://localhost:3000/api/trpc/postgres.reload" \
   -d '{
   "postgresId": "string",
   "appName": "string"
@@ -1014,7 +1014,7 @@ curl -X POST "http://localhost:3000/postgres.reload" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/postgres.reload", {
+fetch("http://localhost:3000/api/trpc/postgres.reload", {
   method: "POST"
 });
 ```
@@ -1183,7 +1183,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/postgres.update" \
+curl -X POST "http://localhost:3000/api/trpc/postgres.update" \
   -d '{
   "postgresId": "string",
   "name": "string",
@@ -1211,7 +1211,7 @@ curl -X POST "http://localhost:3000/postgres.update" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/postgres.update", {
+fetch("http://localhost:3000/api/trpc/postgres.update", {
   method: "POST"
 });
 ```

@@ -83,7 +83,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/backup.create" \
+curl -X POST "http://localhost:3000/api/trpc/backup.create" \
   -d '{
   "schedule": "string",
   "enabled": true,
@@ -103,7 +103,7 @@ curl -X POST "http://localhost:3000/backup.create" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/backup.create", {
+fetch("http://localhost:3000/api/trpc/backup.create", {
   method: "POST"
 });
 ```
@@ -192,7 +192,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X GET "http://localhost:3000/backup.one"
+curl -X GET "http://localhost:3000/api/trpc/backup.one?backupId=string"
 ```
 
 </Request>
@@ -200,7 +200,7 @@ curl -X GET "http://localhost:3000/backup.one"
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/backup.one", {
+fetch("http://localhost:3000/api/trpc/backup.one?backupId=string", {
   method: "GET"
 });
 ```
@@ -313,7 +313,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/backup.update" \
+curl -X POST "http://localhost:3000/api/trpc/backup.update" \
   -d '{
   "schedule": "string",
   "enabled": true,
@@ -329,7 +329,7 @@ curl -X POST "http://localhost:3000/backup.update" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/backup.update", {
+fetch("http://localhost:3000/api/trpc/backup.update", {
   method: "POST"
 });
 ```
@@ -418,7 +418,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/backup.remove" \
+curl -X POST "http://localhost:3000/api/trpc/backup.remove" \
   -d '{
   "backupId": "string"
 }'
@@ -429,7 +429,7 @@ curl -X POST "http://localhost:3000/backup.remove" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/backup.remove", {
+fetch("http://localhost:3000/api/trpc/backup.remove", {
   method: "POST"
 });
 ```
@@ -518,7 +518,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/backup.manualBackupPostgres" \
+curl -X POST "http://localhost:3000/api/trpc/backup.manualBackupPostgres" \
   -d '{
   "backupId": "string"
 }'
@@ -529,7 +529,7 @@ curl -X POST "http://localhost:3000/backup.manualBackupPostgres" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/backup.manualBackupPostgres", {
+fetch("http://localhost:3000/api/trpc/backup.manualBackupPostgres", {
   method: "POST"
 });
 ```
@@ -618,7 +618,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/backup.manualBackupMySql" \
+curl -X POST "http://localhost:3000/api/trpc/backup.manualBackupMySql" \
   -d '{
   "backupId": "string"
 }'
@@ -629,7 +629,7 @@ curl -X POST "http://localhost:3000/backup.manualBackupMySql" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/backup.manualBackupMySql", {
+fetch("http://localhost:3000/api/trpc/backup.manualBackupMySql", {
   method: "POST"
 });
 ```
@@ -718,7 +718,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/backup.manualBackupMariadb" \
+curl -X POST "http://localhost:3000/api/trpc/backup.manualBackupMariadb" \
   -d '{
   "backupId": "string"
 }'
@@ -729,7 +729,7 @@ curl -X POST "http://localhost:3000/backup.manualBackupMariadb" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/backup.manualBackupMariadb", {
+fetch("http://localhost:3000/api/trpc/backup.manualBackupMariadb", {
   method: "POST"
 });
 ```
@@ -818,7 +818,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/backup.manualBackupMongo" \
+curl -X POST "http://localhost:3000/api/trpc/backup.manualBackupMongo" \
   -d '{
   "backupId": "string"
 }'
@@ -829,7 +829,7 @@ curl -X POST "http://localhost:3000/backup.manualBackupMongo" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/backup.manualBackupMongo", {
+fetch("http://localhost:3000/api/trpc/backup.manualBackupMongo", {
   method: "POST"
 });
 ```

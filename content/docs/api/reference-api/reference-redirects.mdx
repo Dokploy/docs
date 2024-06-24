@@ -57,7 +57,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/redirects.create" \
+curl -X POST "http://localhost:3000/api/trpc/redirects.create" \
   -d '{
   "regex": "string",
   "replacement": "string",
@@ -71,7 +71,7 @@ curl -X POST "http://localhost:3000/redirects.create" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/redirects.create", {
+fetch("http://localhost:3000/api/trpc/redirects.create", {
   method: "POST"
 });
 ```
@@ -162,7 +162,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X GET "http://localhost:3000/redirects.one"
+curl -X GET "http://localhost:3000/api/trpc/redirects.one?redirectId=string"
 ```
 
 </Request>
@@ -170,7 +170,7 @@ curl -X GET "http://localhost:3000/redirects.one"
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/redirects.one", {
+fetch("http://localhost:3000/api/trpc/redirects.one?redirectId=string", {
   method: "GET"
 });
 ```
@@ -261,7 +261,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/redirects.delete" \
+curl -X POST "http://localhost:3000/api/trpc/redirects.delete" \
   -d '{
   "redirectId": "string"
 }'
@@ -272,7 +272,7 @@ curl -X POST "http://localhost:3000/redirects.delete" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/redirects.delete", {
+fetch("http://localhost:3000/api/trpc/redirects.delete", {
   method: "POST"
 });
 ```
@@ -379,7 +379,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/redirects.update" \
+curl -X POST "http://localhost:3000/api/trpc/redirects.update" \
   -d '{
   "redirectId": "string",
   "regex": "string",
@@ -393,7 +393,7 @@ curl -X POST "http://localhost:3000/redirects.update" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/redirects.update", {
+fetch("http://localhost:3000/api/trpc/redirects.update", {
   method: "POST"
 });
 ```

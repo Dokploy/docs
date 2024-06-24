@@ -43,7 +43,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X GET "http://localhost:3000/deployment.all"
+curl -X GET "http://localhost:3000/api/trpc/deployment.all?applicationId=string"
 ```
 
 </Request>
@@ -51,7 +51,7 @@ curl -X GET "http://localhost:3000/deployment.all"
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/deployment.all", {
+fetch("http://localhost:3000/api/trpc/deployment.all?applicationId=string", {
   method: "GET"
 });
 ```
@@ -142,7 +142,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X GET "http://localhost:3000/deployment.allByCompose"
+curl -X GET "http://localhost:3000/api/trpc/deployment.allByCompose?composeId=string"
 ```
 
 </Request>
@@ -150,7 +150,7 @@ curl -X GET "http://localhost:3000/deployment.allByCompose"
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/deployment.allByCompose", {
+fetch("http://localhost:3000/api/trpc/deployment.allByCompose?composeId=string", {
   method: "GET"
 });
 ```

@@ -47,7 +47,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/project.create" \
+curl -X POST "http://localhost:3000/api/trpc/project.create" \
   -d '{
   "name": "string",
   "description": "string"
@@ -59,7 +59,7 @@ curl -X POST "http://localhost:3000/project.create" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/project.create", {
+fetch("http://localhost:3000/api/trpc/project.create", {
   method: "POST"
 });
 ```
@@ -150,7 +150,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X GET "http://localhost:3000/project.one"
+curl -X GET "http://localhost:3000/api/trpc/project.one?projectId=string"
 ```
 
 </Request>
@@ -158,7 +158,7 @@ curl -X GET "http://localhost:3000/project.one"
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/project.one", {
+fetch("http://localhost:3000/api/trpc/project.one?projectId=string", {
   method: "GET"
 });
 ```
@@ -241,7 +241,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X GET "http://localhost:3000/project.all"
+curl -X GET "http://localhost:3000/api/trpc/project.all"
 ```
 
 </Request>
@@ -249,7 +249,7 @@ curl -X GET "http://localhost:3000/project.all"
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/project.all", {
+fetch("http://localhost:3000/api/trpc/project.all", {
   method: "GET"
 });
 ```
@@ -340,7 +340,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/project.remove" \
+curl -X POST "http://localhost:3000/api/trpc/project.remove" \
   -d '{
   "projectId": "string"
 }'
@@ -351,7 +351,7 @@ curl -X POST "http://localhost:3000/project.remove" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/project.remove", {
+fetch("http://localhost:3000/api/trpc/project.remove", {
   method: "POST"
 });
 ```
@@ -452,7 +452,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/project.update" \
+curl -X POST "http://localhost:3000/api/trpc/project.update" \
   -d '{
   "name": "string",
   "description": "string",
@@ -465,7 +465,7 @@ curl -X POST "http://localhost:3000/project.update" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/project.update", {
+fetch("http://localhost:3000/api/trpc/project.update", {
   method: "POST"
 });
 ```
