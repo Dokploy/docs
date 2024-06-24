@@ -12,7 +12,7 @@ export default async function Page({
 	const page = getPage(params.slug, params.lang);
 
 	if (page == null) {
-		notFound();
+		permanentRedirect("/docs/core/get-started/introduction");
 	}
 
 	const MDX = page.data.exports.default;
