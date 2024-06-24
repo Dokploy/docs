@@ -1,5 +1,6 @@
 {
     "title": "Core",
+    "root": true,
     "pages": [
       "---快速入门---",
       "get-started/introduction",
