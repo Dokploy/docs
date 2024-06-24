@@ -42,7 +42,6 @@ export function generateMetadata({
 	params: { lang: string; slug?: string[] };
 }) {
 	const page = getPage(params.slug, params.lang);
-
 	if (page == null) {
 		permanentRedirect("/docs/core/get-started/introduction");
 	}

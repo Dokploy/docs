@@ -28,7 +28,7 @@ interface Mode {
 
 const modes: Mode[] = [
 	{
-		param: "docs",
+		param: "core/get-started/introduction",
 		name: "Core",
 		package: "Dokploy",
 		description: "The core",
