@@ -35,7 +35,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/api/trpc/settings.reloadServer"
+curl -X POST "http://localhost:3000/api/settings.reloadServer"
 ```
 
 </Request>
@@ -43,7 +43,7 @@ curl -X POST "http://localhost:3000/api/trpc/settings.reloadServer"
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/settings.reloadServer", {
+fetch("http://localhost:3000/api/settings.reloadServer", {
   method: "POST"
 });
 ```
@@ -126,7 +126,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/api/trpc/settings.reloadTraefik"
+curl -X POST "http://localhost:3000/api/settings.reloadTraefik"
 ```
 
 </Request>
@@ -134,7 +134,7 @@ curl -X POST "http://localhost:3000/api/trpc/settings.reloadTraefik"
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/settings.reloadTraefik", {
+fetch("http://localhost:3000/api/settings.reloadTraefik", {
   method: "POST"
 });
 ```
@@ -217,7 +217,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/api/trpc/settings.cleanUnusedImages"
+curl -X POST "http://localhost:3000/api/settings.cleanUnusedImages"
 ```
 
 </Request>
@@ -225,7 +225,7 @@ curl -X POST "http://localhost:3000/api/trpc/settings.cleanUnusedImages"
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/settings.cleanUnusedImages", {
+fetch("http://localhost:3000/api/settings.cleanUnusedImages", {
   method: "POST"
 });
 ```
@@ -308,7 +308,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/api/trpc/settings.cleanUnusedVolumes"
+curl -X POST "http://localhost:3000/api/settings.cleanUnusedVolumes"
 ```
 
 </Request>
@@ -316,7 +316,7 @@ curl -X POST "http://localhost:3000/api/trpc/settings.cleanUnusedVolumes"
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/settings.cleanUnusedVolumes", {
+fetch("http://localhost:3000/api/settings.cleanUnusedVolumes", {
   method: "POST"
 });
 ```
@@ -399,7 +399,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/api/trpc/settings.cleanStoppedContainers"
+curl -X POST "http://localhost:3000/api/settings.cleanStoppedContainers"
 ```
 
 </Request>
@@ -407,7 +407,7 @@ curl -X POST "http://localhost:3000/api/trpc/settings.cleanStoppedContainers"
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/settings.cleanStoppedContainers", {
+fetch("http://localhost:3000/api/settings.cleanStoppedContainers", {
   method: "POST"
 });
 ```
@@ -490,7 +490,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/api/trpc/settings.cleanDockerBuilder"
+curl -X POST "http://localhost:3000/api/settings.cleanDockerBuilder"
 ```
 
 </Request>
@@ -498,7 +498,7 @@ curl -X POST "http://localhost:3000/api/trpc/settings.cleanDockerBuilder"
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/settings.cleanDockerBuilder", {
+fetch("http://localhost:3000/api/settings.cleanDockerBuilder", {
   method: "POST"
 });
 ```
@@ -581,7 +581,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/api/trpc/settings.cleanDockerPrune"
+curl -X POST "http://localhost:3000/api/settings.cleanDockerPrune"
 ```
 
 </Request>
@@ -589,7 +589,7 @@ curl -X POST "http://localhost:3000/api/trpc/settings.cleanDockerPrune"
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/settings.cleanDockerPrune", {
+fetch("http://localhost:3000/api/settings.cleanDockerPrune", {
   method: "POST"
 });
 ```
@@ -672,7 +672,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/api/trpc/settings.cleanAll"
+curl -X POST "http://localhost:3000/api/settings.cleanAll"
 ```
 
 </Request>
@@ -680,7 +680,7 @@ curl -X POST "http://localhost:3000/api/trpc/settings.cleanAll"
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/settings.cleanAll", {
+fetch("http://localhost:3000/api/settings.cleanAll", {
   method: "POST"
 });
 ```
@@ -763,7 +763,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/api/trpc/settings.cleanMonitoring"
+curl -X POST "http://localhost:3000/api/settings.cleanMonitoring"
 ```
 
 </Request>
@@ -771,7 +771,7 @@ curl -X POST "http://localhost:3000/api/trpc/settings.cleanMonitoring"
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/settings.cleanMonitoring", {
+fetch("http://localhost:3000/api/settings.cleanMonitoring", {
   method: "POST"
 });
 ```
@@ -860,7 +860,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/api/trpc/settings.saveSSHPrivateKey" \
+curl -X POST "http://localhost:3000/api/settings.saveSSHPrivateKey" \
   -d '{
   "sshPrivateKey": "string"
 }'
@@ -871,7 +871,7 @@ curl -X POST "http://localhost:3000/api/trpc/settings.saveSSHPrivateKey" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/settings.saveSSHPrivateKey", {
+fetch("http://localhost:3000/api/settings.saveSSHPrivateKey", {
   method: "POST"
 });
 ```
@@ -972,7 +972,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/api/trpc/settings.assignDomainServer" \
+curl -X POST "http://localhost:3000/api/settings.assignDomainServer" \
   -d '{
   "letsEncryptEmail": "string",
   "host": "string",
@@ -985,7 +985,7 @@ curl -X POST "http://localhost:3000/api/trpc/settings.assignDomainServer" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/settings.assignDomainServer", {
+fetch("http://localhost:3000/api/settings.assignDomainServer", {
   method: "POST"
 });
 ```
@@ -1068,7 +1068,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/api/trpc/settings.cleanSSHPrivateKey"
+curl -X POST "http://localhost:3000/api/settings.cleanSSHPrivateKey"
 ```
 
 </Request>
@@ -1076,7 +1076,7 @@ curl -X POST "http://localhost:3000/api/trpc/settings.cleanSSHPrivateKey"
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/settings.cleanSSHPrivateKey", {
+fetch("http://localhost:3000/api/settings.cleanSSHPrivateKey", {
   method: "POST"
 });
 ```
@@ -1165,7 +1165,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/api/trpc/settings.updateDockerCleanup" \
+curl -X POST "http://localhost:3000/api/settings.updateDockerCleanup" \
   -d '{
   "enableDockerCleanup": true
 }'
@@ -1176,7 +1176,7 @@ curl -X POST "http://localhost:3000/api/trpc/settings.updateDockerCleanup" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/settings.updateDockerCleanup", {
+fetch("http://localhost:3000/api/settings.updateDockerCleanup", {
   method: "POST"
 });
 ```
@@ -1259,7 +1259,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X GET "http://localhost:3000/api/trpc/settings.readTraefikConfig"
+curl -X GET "http://localhost:3000/api/settings.readTraefikConfig"
 ```
 
 </Request>
@@ -1267,7 +1267,7 @@ curl -X GET "http://localhost:3000/api/trpc/settings.readTraefikConfig"
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/settings.readTraefikConfig", {
+fetch("http://localhost:3000/api/settings.readTraefikConfig", {
   method: "GET"
 });
 ```
@@ -1358,7 +1358,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/api/trpc/settings.updateTraefikConfig" \
+curl -X POST "http://localhost:3000/api/settings.updateTraefikConfig" \
   -d '{
   "traefikConfig": "string"
 }'
@@ -1369,7 +1369,7 @@ curl -X POST "http://localhost:3000/api/trpc/settings.updateTraefikConfig" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/settings.updateTraefikConfig", {
+fetch("http://localhost:3000/api/settings.updateTraefikConfig", {
   method: "POST"
 });
 ```
@@ -1452,7 +1452,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X GET "http://localhost:3000/api/trpc/settings.readWebServerTraefikConfig"
+curl -X GET "http://localhost:3000/api/settings.readWebServerTraefikConfig"
 ```
 
 </Request>
@@ -1460,7 +1460,7 @@ curl -X GET "http://localhost:3000/api/trpc/settings.readWebServerTraefikConfig"
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/settings.readWebServerTraefikConfig", {
+fetch("http://localhost:3000/api/settings.readWebServerTraefikConfig", {
   method: "GET"
 });
 ```
@@ -1551,7 +1551,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/api/trpc/settings.updateWebServerTraefikConfig" \
+curl -X POST "http://localhost:3000/api/settings.updateWebServerTraefikConfig" \
   -d '{
   "traefikConfig": "string"
 }'
@@ -1562,7 +1562,7 @@ curl -X POST "http://localhost:3000/api/trpc/settings.updateWebServerTraefikConf
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/settings.updateWebServerTraefikConfig", {
+fetch("http://localhost:3000/api/settings.updateWebServerTraefikConfig", {
   method: "POST"
 });
 ```
@@ -1645,7 +1645,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X GET "http://localhost:3000/api/trpc/settings.readMiddlewareTraefikConfig"
+curl -X GET "http://localhost:3000/api/settings.readMiddlewareTraefikConfig"
 ```
 
 </Request>
@@ -1653,7 +1653,7 @@ curl -X GET "http://localhost:3000/api/trpc/settings.readMiddlewareTraefikConfig
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/settings.readMiddlewareTraefikConfig", {
+fetch("http://localhost:3000/api/settings.readMiddlewareTraefikConfig", {
   method: "GET"
 });
 ```
@@ -1744,7 +1744,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/api/trpc/settings.updateMiddlewareTraefikConfig" \
+curl -X POST "http://localhost:3000/api/settings.updateMiddlewareTraefikConfig" \
   -d '{
   "traefikConfig": "string"
 }'
@@ -1755,7 +1755,7 @@ curl -X POST "http://localhost:3000/api/trpc/settings.updateMiddlewareTraefikCon
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/settings.updateMiddlewareTraefikConfig", {
+fetch("http://localhost:3000/api/settings.updateMiddlewareTraefikConfig", {
   method: "POST"
 });
 ```
@@ -1838,7 +1838,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/api/trpc/settings.checkAndUpdateImage"
+curl -X POST "http://localhost:3000/api/settings.checkAndUpdateImage"
 ```
 
 </Request>
@@ -1846,7 +1846,7 @@ curl -X POST "http://localhost:3000/api/trpc/settings.checkAndUpdateImage"
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/settings.checkAndUpdateImage", {
+fetch("http://localhost:3000/api/settings.checkAndUpdateImage", {
   method: "POST"
 });
 ```
@@ -1929,7 +1929,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/api/trpc/settings.updateServer"
+curl -X POST "http://localhost:3000/api/settings.updateServer"
 ```
 
 </Request>
@@ -1937,7 +1937,7 @@ curl -X POST "http://localhost:3000/api/trpc/settings.updateServer"
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/settings.updateServer", {
+fetch("http://localhost:3000/api/settings.updateServer", {
   method: "POST"
 });
 ```
@@ -2020,7 +2020,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X GET "http://localhost:3000/api/trpc/settings.getDokployVersion"
+curl -X GET "http://localhost:3000/api/settings.getDokployVersion"
 ```
 
 </Request>
@@ -2028,7 +2028,7 @@ curl -X GET "http://localhost:3000/api/trpc/settings.getDokployVersion"
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/settings.getDokployVersion", {
+fetch("http://localhost:3000/api/settings.getDokployVersion", {
   method: "GET"
 });
 ```
@@ -2111,7 +2111,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X GET "http://localhost:3000/api/trpc/settings.readDirectories"
+curl -X GET "http://localhost:3000/api/settings.readDirectories"
 ```
 
 </Request>
@@ -2119,7 +2119,7 @@ curl -X GET "http://localhost:3000/api/trpc/settings.readDirectories"
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/settings.readDirectories", {
+fetch("http://localhost:3000/api/settings.readDirectories", {
   method: "GET"
 });
 ```
@@ -2216,7 +2216,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/api/trpc/settings.updateTraefikFile" \
+curl -X POST "http://localhost:3000/api/settings.updateTraefikFile" \
   -d '{
   "path": "string",
   "traefikConfig": "string"
@@ -2228,7 +2228,7 @@ curl -X POST "http://localhost:3000/api/trpc/settings.updateTraefikFile" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/settings.updateTraefikFile", {
+fetch("http://localhost:3000/api/settings.updateTraefikFile", {
   method: "POST"
 });
 ```
@@ -2319,7 +2319,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X GET "http://localhost:3000/api/trpc/settings.readTraefikFile?path=string"
+curl -X GET "http://localhost:3000/api/settings.readTraefikFile?path=string"
 ```
 
 </Request>
@@ -2327,7 +2327,7 @@ curl -X GET "http://localhost:3000/api/trpc/settings.readTraefikFile?path=string
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/settings.readTraefikFile?path=string", {
+fetch("http://localhost:3000/api/settings.readTraefikFile?path=string", {
   method: "GET"
 });
 ```
@@ -2410,7 +2410,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X GET "http://localhost:3000/api/trpc/settings.getOpenApiDocument"
+curl -X GET "http://localhost:3000/api/settings.getOpenApiDocument"
 ```
 
 </Request>
@@ -2418,7 +2418,7 @@ curl -X GET "http://localhost:3000/api/trpc/settings.getOpenApiDocument"
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/settings.getOpenApiDocument", {
+fetch("http://localhost:3000/api/settings.getOpenApiDocument", {
   method: "GET"
 });
 ```

@@ -67,7 +67,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/api/trpc/certificates.create" \
+curl -X POST "http://localhost:3000/api/certificates.create" \
   -d '{
   "certificateId": "string",
   "name": "string",
@@ -83,7 +83,7 @@ curl -X POST "http://localhost:3000/api/trpc/certificates.create" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/certificates.create", {
+fetch("http://localhost:3000/api/certificates.create", {
   method: "POST"
 });
 ```
@@ -174,7 +174,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X GET "http://localhost:3000/api/trpc/certificates.one?certificateId=string"
+curl -X GET "http://localhost:3000/api/certificates.one?certificateId=string"
 ```
 
 </Request>
@@ -182,7 +182,7 @@ curl -X GET "http://localhost:3000/api/trpc/certificates.one?certificateId=strin
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/certificates.one?certificateId=string", {
+fetch("http://localhost:3000/api/certificates.one?certificateId=string", {
   method: "GET"
 });
 ```
@@ -273,7 +273,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/api/trpc/certificates.remove" \
+curl -X POST "http://localhost:3000/api/certificates.remove" \
   -d '{
   "certificateId": "string"
 }'
@@ -284,7 +284,7 @@ curl -X POST "http://localhost:3000/api/trpc/certificates.remove" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/certificates.remove", {
+fetch("http://localhost:3000/api/certificates.remove", {
   method: "POST"
 });
 ```
@@ -367,7 +367,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X GET "http://localhost:3000/api/trpc/certificates.all"
+curl -X GET "http://localhost:3000/api/certificates.all"
 ```
 
 </Request>
@@ -375,7 +375,7 @@ curl -X GET "http://localhost:3000/api/trpc/certificates.all"
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/certificates.all", {
+fetch("http://localhost:3000/api/certificates.all", {
   method: "GET"
 });
 ```

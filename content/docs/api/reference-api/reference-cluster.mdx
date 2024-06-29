@@ -35,7 +35,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X GET "http://localhost:3000/api/trpc/cluster.getNodes"
+curl -X GET "http://localhost:3000/api/cluster.getNodes"
 ```
 
 </Request>
@@ -43,7 +43,7 @@ curl -X GET "http://localhost:3000/api/trpc/cluster.getNodes"
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/cluster.getNodes", {
+fetch("http://localhost:3000/api/cluster.getNodes", {
   method: "GET"
 });
 ```
@@ -132,7 +132,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/api/trpc/cluster.removeWorker" \
+curl -X POST "http://localhost:3000/api/cluster.removeWorker" \
   -d '{
   "nodeId": "string"
 }'
@@ -143,7 +143,7 @@ curl -X POST "http://localhost:3000/api/trpc/cluster.removeWorker" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/cluster.removeWorker", {
+fetch("http://localhost:3000/api/cluster.removeWorker", {
   method: "POST"
 });
 ```
@@ -226,7 +226,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X GET "http://localhost:3000/api/trpc/cluster.addWorker"
+curl -X GET "http://localhost:3000/api/cluster.addWorker"
 ```
 
 </Request>
@@ -234,7 +234,7 @@ curl -X GET "http://localhost:3000/api/trpc/cluster.addWorker"
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/cluster.addWorker", {
+fetch("http://localhost:3000/api/cluster.addWorker", {
   method: "GET"
 });
 ```
@@ -317,7 +317,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X GET "http://localhost:3000/api/trpc/cluster.addManager"
+curl -X GET "http://localhost:3000/api/cluster.addManager"
 ```
 
 </Request>
@@ -325,7 +325,7 @@ curl -X GET "http://localhost:3000/api/trpc/cluster.addManager"
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/cluster.addManager", {
+fetch("http://localhost:3000/api/cluster.addManager", {
   method: "GET"
 });
 ```

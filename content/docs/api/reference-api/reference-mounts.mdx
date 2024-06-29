@@ -75,7 +75,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/api/trpc/mounts.create" \
+curl -X POST "http://localhost:3000/api/mounts.create" \
   -d '{
   "type": "bind",
   "hostPath": "string",
@@ -92,7 +92,7 @@ curl -X POST "http://localhost:3000/api/trpc/mounts.create" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/mounts.create", {
+fetch("http://localhost:3000/api/mounts.create", {
   method: "POST"
 });
 ```
@@ -181,7 +181,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/api/trpc/mounts.remove" \
+curl -X POST "http://localhost:3000/api/mounts.remove" \
   -d '{
   "mountId": "string"
 }'
@@ -192,7 +192,7 @@ curl -X POST "http://localhost:3000/api/trpc/mounts.remove" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/mounts.remove", {
+fetch("http://localhost:3000/api/mounts.remove", {
   method: "POST"
 });
 ```
@@ -281,7 +281,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X GET "http://localhost:3000/api/trpc/mounts.one?mountId=string"
+curl -X GET "http://localhost:3000/api/mounts.one?mountId=string"
 ```
 
 </Request>
@@ -289,7 +289,7 @@ curl -X GET "http://localhost:3000/api/trpc/mounts.one?mountId=string"
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/mounts.one?mountId=string", {
+fetch("http://localhost:3000/api/mounts.one?mountId=string", {
   method: "GET"
 });
 ```
@@ -440,7 +440,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/api/trpc/mounts.update" \
+curl -X POST "http://localhost:3000/api/mounts.update" \
   -d '{
   "mountId": "string",
   "type": "bind",
@@ -464,7 +464,7 @@ curl -X POST "http://localhost:3000/api/trpc/mounts.update" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/mounts.update", {
+fetch("http://localhost:3000/api/mounts.update", {
   method: "POST"
 });
 ```

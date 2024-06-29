@@ -59,7 +59,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/api/trpc/port.create" \
+curl -X POST "http://localhost:3000/api/port.create" \
   -d '{
   "publishedPort": 0,
   "targetPort": 0,
@@ -73,7 +73,7 @@ curl -X POST "http://localhost:3000/api/trpc/port.create" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/port.create", {
+fetch("http://localhost:3000/api/port.create", {
   method: "POST"
 });
 ```
@@ -164,7 +164,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X GET "http://localhost:3000/api/trpc/port.one?portId=string"
+curl -X GET "http://localhost:3000/api/port.one?portId=string"
 ```
 
 </Request>
@@ -172,7 +172,7 @@ curl -X GET "http://localhost:3000/api/trpc/port.one?portId=string"
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/port.one?portId=string", {
+fetch("http://localhost:3000/api/port.one?portId=string", {
   method: "GET"
 });
 ```
@@ -263,7 +263,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/api/trpc/port.delete" \
+curl -X POST "http://localhost:3000/api/port.delete" \
   -d '{
   "portId": "string"
 }'
@@ -274,7 +274,7 @@ curl -X POST "http://localhost:3000/api/trpc/port.delete" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/port.delete", {
+fetch("http://localhost:3000/api/port.delete", {
   method: "POST"
 });
 ```
@@ -381,7 +381,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/api/trpc/port.update" \
+curl -X POST "http://localhost:3000/api/port.update" \
   -d '{
   "portId": "string",
   "publishedPort": 0,
@@ -395,7 +395,7 @@ curl -X POST "http://localhost:3000/api/trpc/port.update" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/port.update", {
+fetch("http://localhost:3000/api/port.update", {
   method: "POST"
 });
 ```

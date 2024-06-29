@@ -57,7 +57,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/api/trpc/redirects.create" \
+curl -X POST "http://localhost:3000/api/redirects.create" \
   -d '{
   "regex": "string",
   "replacement": "string",
@@ -71,7 +71,7 @@ curl -X POST "http://localhost:3000/api/trpc/redirects.create" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/redirects.create", {
+fetch("http://localhost:3000/api/redirects.create", {
   method: "POST"
 });
 ```
@@ -162,7 +162,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X GET "http://localhost:3000/api/trpc/redirects.one?redirectId=string"
+curl -X GET "http://localhost:3000/api/redirects.one?redirectId=string"
 ```
 
 </Request>
@@ -170,7 +170,7 @@ curl -X GET "http://localhost:3000/api/trpc/redirects.one?redirectId=string"
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/redirects.one?redirectId=string", {
+fetch("http://localhost:3000/api/redirects.one?redirectId=string", {
   method: "GET"
 });
 ```
@@ -261,7 +261,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/api/trpc/redirects.delete" \
+curl -X POST "http://localhost:3000/api/redirects.delete" \
   -d '{
   "redirectId": "string"
 }'
@@ -272,7 +272,7 @@ curl -X POST "http://localhost:3000/api/trpc/redirects.delete" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/redirects.delete", {
+fetch("http://localhost:3000/api/redirects.delete", {
   method: "POST"
 });
 ```
@@ -379,7 +379,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/api/trpc/redirects.update" \
+curl -X POST "http://localhost:3000/api/redirects.update" \
   -d '{
   "redirectId": "string",
   "regex": "string",
@@ -393,7 +393,7 @@ curl -X POST "http://localhost:3000/api/trpc/redirects.update" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/redirects.update", {
+fetch("http://localhost:3000/api/redirects.update", {
   method: "POST"
 });
 ```

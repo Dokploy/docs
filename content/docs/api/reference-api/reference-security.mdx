@@ -53,7 +53,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/api/trpc/security.create" \
+curl -X POST "http://localhost:3000/api/security.create" \
   -d '{
   "applicationId": "string",
   "username": "string",
@@ -66,7 +66,7 @@ curl -X POST "http://localhost:3000/api/trpc/security.create" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/security.create", {
+fetch("http://localhost:3000/api/security.create", {
   method: "POST"
 });
 ```
@@ -157,7 +157,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X GET "http://localhost:3000/api/trpc/security.one?securityId=string"
+curl -X GET "http://localhost:3000/api/security.one?securityId=string"
 ```
 
 </Request>
@@ -165,7 +165,7 @@ curl -X GET "http://localhost:3000/api/trpc/security.one?securityId=string"
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/security.one?securityId=string", {
+fetch("http://localhost:3000/api/security.one?securityId=string", {
   method: "GET"
 });
 ```
@@ -256,7 +256,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/api/trpc/security.delete" \
+curl -X POST "http://localhost:3000/api/security.delete" \
   -d '{
   "securityId": "string"
 }'
@@ -267,7 +267,7 @@ curl -X POST "http://localhost:3000/api/trpc/security.delete" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/security.delete", {
+fetch("http://localhost:3000/api/security.delete", {
   method: "POST"
 });
 ```
@@ -370,7 +370,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/api/trpc/security.update" \
+curl -X POST "http://localhost:3000/api/security.update" \
   -d '{
   "securityId": "string",
   "username": "string",
@@ -383,7 +383,7 @@ curl -X POST "http://localhost:3000/api/trpc/security.update" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/security.update", {
+fetch("http://localhost:3000/api/security.update", {
   method: "POST"
 });
 ```

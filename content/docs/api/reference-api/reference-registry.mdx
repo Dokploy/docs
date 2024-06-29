@@ -69,7 +69,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/api/trpc/registry.create" \
+curl -X POST "http://localhost:3000/api/registry.create" \
   -d '{
   "registryName": "string",
   "username": "string",
@@ -85,7 +85,7 @@ curl -X POST "http://localhost:3000/api/trpc/registry.create" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/registry.create", {
+fetch("http://localhost:3000/api/registry.create", {
   method: "POST"
 });
 ```
@@ -176,7 +176,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/api/trpc/registry.remove" \
+curl -X POST "http://localhost:3000/api/registry.remove" \
   -d '{
   "registryId": "string"
 }'
@@ -187,7 +187,7 @@ curl -X POST "http://localhost:3000/api/trpc/registry.remove" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/registry.remove", {
+fetch("http://localhost:3000/api/registry.remove", {
   method: "POST"
 });
 ```
@@ -322,7 +322,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/api/trpc/registry.update" \
+curl -X POST "http://localhost:3000/api/registry.update" \
   -d '{
   "registryId": "string",
   "registryName": "string",
@@ -341,7 +341,7 @@ curl -X POST "http://localhost:3000/api/trpc/registry.update" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/registry.update", {
+fetch("http://localhost:3000/api/registry.update", {
   method: "POST"
 });
 ```
@@ -424,7 +424,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X GET "http://localhost:3000/api/trpc/registry.all"
+curl -X GET "http://localhost:3000/api/registry.all"
 ```
 
 </Request>
@@ -432,7 +432,7 @@ curl -X GET "http://localhost:3000/api/trpc/registry.all"
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/registry.all", {
+fetch("http://localhost:3000/api/registry.all", {
   method: "GET"
 });
 ```
@@ -523,7 +523,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X GET "http://localhost:3000/api/trpc/registry.one?registryId=string"
+curl -X GET "http://localhost:3000/api/registry.one?registryId=string"
 ```
 
 </Request>
@@ -531,7 +531,7 @@ curl -X GET "http://localhost:3000/api/trpc/registry.one?registryId=string"
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/registry.one?registryId=string", {
+fetch("http://localhost:3000/api/registry.one?registryId=string", {
   method: "GET"
 });
 ```
@@ -648,7 +648,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/api/trpc/registry.testRegistry" \
+curl -X POST "http://localhost:3000/api/registry.testRegistry" \
   -d '{
   "registryName": "string",
   "username": "string",
@@ -664,7 +664,7 @@ curl -X POST "http://localhost:3000/api/trpc/registry.testRegistry" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/registry.testRegistry", {
+fetch("http://localhost:3000/api/registry.testRegistry", {
   method: "POST"
 });
 ```
@@ -767,7 +767,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/api/trpc/registry.enableSelfHostedRegistry" \
+curl -X POST "http://localhost:3000/api/registry.enableSelfHostedRegistry" \
   -d '{
   "registryUrl": "string",
   "username": "string",
@@ -780,7 +780,7 @@ curl -X POST "http://localhost:3000/api/trpc/registry.enableSelfHostedRegistry" 
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/registry.enableSelfHostedRegistry", {
+fetch("http://localhost:3000/api/registry.enableSelfHostedRegistry", {
   method: "POST"
 });
 ```

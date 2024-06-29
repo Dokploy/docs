@@ -63,7 +63,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/api/trpc/destination.create" \
+curl -X POST "http://localhost:3000/api/destination.create" \
   -d '{
   "name": "string",
   "accessKey": "string",
@@ -79,7 +79,7 @@ curl -X POST "http://localhost:3000/api/trpc/destination.create" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/destination.create", {
+fetch("http://localhost:3000/api/destination.create", {
   method: "POST"
 });
 ```
@@ -190,7 +190,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/api/trpc/destination.testConnection" \
+curl -X POST "http://localhost:3000/api/destination.testConnection" \
   -d '{
   "name": "string",
   "accessKey": "string",
@@ -206,7 +206,7 @@ curl -X POST "http://localhost:3000/api/trpc/destination.testConnection" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/destination.testConnection", {
+fetch("http://localhost:3000/api/destination.testConnection", {
   method: "POST"
 });
 ```
@@ -295,7 +295,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X GET "http://localhost:3000/api/trpc/destination.one?destinationId=string"
+curl -X GET "http://localhost:3000/api/destination.one?destinationId=string"
 ```
 
 </Request>
@@ -303,7 +303,7 @@ curl -X GET "http://localhost:3000/api/trpc/destination.one?destinationId=string
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/destination.one?destinationId=string", {
+fetch("http://localhost:3000/api/destination.one?destinationId=string", {
   method: "GET"
 });
 ```
@@ -386,7 +386,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X GET "http://localhost:3000/api/trpc/destination.all"
+curl -X GET "http://localhost:3000/api/destination.all"
 ```
 
 </Request>
@@ -394,7 +394,7 @@ curl -X GET "http://localhost:3000/api/trpc/destination.all"
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/destination.all", {
+fetch("http://localhost:3000/api/destination.all", {
   method: "GET"
 });
 ```
@@ -483,7 +483,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/api/trpc/destination.remove" \
+curl -X POST "http://localhost:3000/api/destination.remove" \
   -d '{
   "destinationId": "string"
 }'
@@ -494,7 +494,7 @@ curl -X POST "http://localhost:3000/api/trpc/destination.remove" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/destination.remove", {
+fetch("http://localhost:3000/api/destination.remove", {
   method: "POST"
 });
 ```
@@ -609,7 +609,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/api/trpc/destination.update" \
+curl -X POST "http://localhost:3000/api/destination.update" \
   -d '{
   "name": "string",
   "accessKey": "string",
@@ -626,7 +626,7 @@ curl -X POST "http://localhost:3000/api/trpc/destination.update" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/destination.update", {
+fetch("http://localhost:3000/api/destination.update", {
   method: "POST"
 });
 ```

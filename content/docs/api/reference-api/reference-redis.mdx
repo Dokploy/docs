@@ -67,7 +67,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/api/trpc/redis.create" \
+curl -X POST "http://localhost:3000/api/redis.create" \
   -d '{
   "name": "string",
   "appName": "string",
@@ -83,7 +83,7 @@ curl -X POST "http://localhost:3000/api/trpc/redis.create" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/redis.create", {
+fetch("http://localhost:3000/api/redis.create", {
   method: "POST"
 });
 ```
@@ -172,7 +172,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X GET "http://localhost:3000/api/trpc/redis.one?redisId=string"
+curl -X GET "http://localhost:3000/api/redis.one?redisId=string"
 ```
 
 </Request>
@@ -180,7 +180,7 @@ curl -X GET "http://localhost:3000/api/trpc/redis.one?redisId=string"
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/redis.one?redisId=string", {
+fetch("http://localhost:3000/api/redis.one?redisId=string", {
   method: "GET"
 });
 ```
@@ -269,7 +269,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/api/trpc/redis.start" \
+curl -X POST "http://localhost:3000/api/redis.start" \
   -d '{
   "redisId": "string"
 }'
@@ -280,7 +280,7 @@ curl -X POST "http://localhost:3000/api/trpc/redis.start" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/redis.start", {
+fetch("http://localhost:3000/api/redis.start", {
   method: "POST"
 });
 ```
@@ -375,7 +375,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/api/trpc/redis.reload" \
+curl -X POST "http://localhost:3000/api/redis.reload" \
   -d '{
   "redisId": "string",
   "appName": "string"
@@ -387,7 +387,7 @@ curl -X POST "http://localhost:3000/api/trpc/redis.reload" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/redis.reload", {
+fetch("http://localhost:3000/api/redis.reload", {
   method: "POST"
 });
 ```
@@ -476,7 +476,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/api/trpc/redis.stop" \
+curl -X POST "http://localhost:3000/api/redis.stop" \
   -d '{
   "redisId": "string"
 }'
@@ -487,7 +487,7 @@ curl -X POST "http://localhost:3000/api/trpc/redis.stop" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/redis.stop", {
+fetch("http://localhost:3000/api/redis.stop", {
   method: "POST"
 });
 ```
@@ -580,7 +580,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/api/trpc/redis.saveExternalPort" \
+curl -X POST "http://localhost:3000/api/redis.saveExternalPort" \
   -d '{
   "redisId": "string",
   "externalPort": 0
@@ -592,7 +592,7 @@ curl -X POST "http://localhost:3000/api/trpc/redis.saveExternalPort" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/redis.saveExternalPort", {
+fetch("http://localhost:3000/api/redis.saveExternalPort", {
   method: "POST"
 });
 ```
@@ -681,7 +681,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/api/trpc/redis.deploy" \
+curl -X POST "http://localhost:3000/api/redis.deploy" \
   -d '{
   "redisId": "string"
 }'
@@ -692,7 +692,7 @@ curl -X POST "http://localhost:3000/api/trpc/redis.deploy" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/redis.deploy", {
+fetch("http://localhost:3000/api/redis.deploy", {
   method: "POST"
 });
 ```
@@ -787,7 +787,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/api/trpc/redis.changeStatus" \
+curl -X POST "http://localhost:3000/api/redis.changeStatus" \
   -d '{
   "redisId": "string",
   "applicationStatus": "idle"
@@ -799,7 +799,7 @@ curl -X POST "http://localhost:3000/api/trpc/redis.changeStatus" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/redis.changeStatus", {
+fetch("http://localhost:3000/api/redis.changeStatus", {
   method: "POST"
 });
 ```
@@ -888,7 +888,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/api/trpc/redis.remove" \
+curl -X POST "http://localhost:3000/api/redis.remove" \
   -d '{
   "redisId": "string"
 }'
@@ -899,7 +899,7 @@ curl -X POST "http://localhost:3000/api/trpc/redis.remove" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/redis.remove", {
+fetch("http://localhost:3000/api/redis.remove", {
   method: "POST"
 });
 ```
@@ -992,7 +992,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/api/trpc/redis.saveEnvironment" \
+curl -X POST "http://localhost:3000/api/redis.saveEnvironment" \
   -d '{
   "redisId": "string",
   "env": "string"
@@ -1004,7 +1004,7 @@ curl -X POST "http://localhost:3000/api/trpc/redis.saveEnvironment" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/redis.saveEnvironment", {
+fetch("http://localhost:3000/api/redis.saveEnvironment", {
   method: "POST"
 });
 ```
@@ -1163,7 +1163,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X POST "http://localhost:3000/api/trpc/redis.update" \
+curl -X POST "http://localhost:3000/api/redis.update" \
   -d '{
   "redisId": "string",
   "name": "string",
@@ -1189,7 +1189,7 @@ curl -X POST "http://localhost:3000/api/trpc/redis.update" \
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/api/trpc/redis.update", {
+fetch("http://localhost:3000/api/redis.update", {
   method: "POST"
 });
 ```
