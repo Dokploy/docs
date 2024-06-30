@@ -3,41 +3,54 @@ title: Overview
 description: "Explore the multiple deployment methods available in Dokploy, including GitHub, Git, Docker, and automated deployments via webhooks."
 ---
 
+Applications in Dokploy are treated as a single service or container, making it easy and intuitive for users to work with each application in its own workspace.
 
-Dokploy provides several ways to deploy applications, simplifying the process whether you're using GitHub, any Git provider, Docker, or automated deployments.
+We offer multiple functionalities that you can use to manage your applications, such as:
 
-- Github
-- Git (Any Git Provider)
-- Docker
+## General
 
-## Github
+Configure the source of your code, the way your application is built, and also manage actions like deploying, updating, and deleting your application, and stopping it.
 
-Deploying via GitHub is straightforward:
+## Environment
 
-1. Configure your GitHub repository under `/dashboard/settings/server`.
-2. When creating an application, Dokploy automatically loads the available repositories and branches.
+If you need to assign environment variables to your application, you can do so here.
 
-## Git
+## Monitoring
 
-For deployments from any Git repository, public or private, you can use either SSH or HTTPS:
+Four graphs will be displayed for the use of memory, CPU, disk, and network. Note that the information is only updated if you are viewing the current page, otherwise it will not be updated.
 
-1. Provide the repository URL.
-2. Specify the branch you wish to deploy.
+## Logs
 
-## Docker
+If you want to see any important logs from your application that is running, you can do so here and determine if your application is displaying any errors or not.
 
-For Docker deployments:
+## Deployments
 
-- Specify a Docker image. For private repositories, you'll need to provide the username and password.
+You can view the last 10 deployments of your application. When you deploy your application in real time, a new deployment record will be created and it will gradually show you how your application is being built.
 
-## Auto Deploy
+We also offer a button to cancel deployments that are in queue. Note that those in progress cannot be canceled.
 
-Set up automatic deployments:
+We provide a webhook so that you can trigger your own deployments by pushing to your GitHub, Gitea, GitLab, Bitbucket, DockerHub repository.
 
-1. Navigate to the `deployments` tab and copy the `Webhook URL`.
-2. In your Git repository settings, paste this URL into the Webhook URL field.
-3. Make sure to select content type `application/json`.
-4. Choose the events that should trigger deployments, such as `Push`.
-5. Once configured, any specified action, like pushing a new commit, will automatically trigger a deployment.
+## Domains
 
-Dokploy supports webhooks from GitHub, GitLab, Bitbucket, Gitea, and DockerHub.
+This is where you will assign your domain so that your application can be accessed from the internet.
+
+There are two ways to assign a domain:
+
+1. Create a custom domain.
+2. Use a generated domain, we use traefik.me to generate free domains.
+
+## Advanced Settings
+
+This section provides advanced configuration options for experienced users. It includes tools for custom commands within the container, managing Docker Swarm settings, and adjusting cluster settings such as replicas and registry selection. These tools are typically not required for standard application deployment and are intended for complex management and troubleshooting tasks.
+
+- **Run Command**: Execute custom commands directly in the container for advanced management or troubleshooting.
+- **Cluster Settings**: Configure the number of replicas and select the Docker registry for your deployment to manage how your application scales and where it pulls images from.
+- **Swarm Settings**: Access additional Docker Swarm configurations for detailed orchestration and scaling across multiple nodes.
+- **Resources**: Adjust the CPU and memory allocation for your application.
+- **Volumes**: To ensure data persistence across deployments, configure storage volumes for your application.
+- **Ports**: Expose your application to the internet by configuring network ports.
+- **Traefik**: Modify Traefik settings to manage HTTP request handling for your application.
+
+### Note
+Adjust these settings carefully as incorrect configurations can significantly impact your application’s functionality and availability.
