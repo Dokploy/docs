@@ -9,7 +9,7 @@ Follow these steps to completely remove Dokploy and its components from your ser
 
 <Steps>
 <Step>
-1. Remove the docker swarm services created by Dokploy:
+Remove the docker swarm services created by Dokploy:
 
    ```bash
    docker service rm dokploy dokploy-traefik dokploy-postgres dokploy-redis
@@ -19,7 +19,7 @@ Follow these steps to completely remove Dokploy and its components from your ser
  
 <Step>
  
-2. Remove the docker volumes created by Dokploy:
+Remove the docker volumes created by Dokploy:
 
    ```bash
    docker volume rm -f dokploy-postgres-database redis-data-volume
@@ -29,7 +29,7 @@ Follow these steps to completely remove Dokploy and its components from your ser
  
 <Step>
 
-3. Remove the dokploy files and directories from your server:
+Remove the dokploy files and directories from your server:
 
    ```bash
    sudo rm -rf /etc/dokploy

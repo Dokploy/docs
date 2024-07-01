@@ -5,10 +5,6 @@ description: "Learn how to setup a domain for an application"
 
 This guide details how to set up a domain for your application.
 
-## Requirements
-
-If you do not have a domain, refer to the `Web Domain Setup` section first.
-
 ## Create DNS Record
 
 1. Add an `A` record to your DNS settings:
@@ -20,19 +16,13 @@ If you do not have a domain, refer to the `Web Domain Setup` section first.
 1. Navigate to your application's dashboard.
 2. Go to the `Domains` tab and click on `Add Domain`.
 3. Enter the DNS record you created in the previous step (e.g., `app.yourdomain.com`).
+4. Make sure to assign the right container port (e.g., NextJS: `3000`).
+5. Choose your certificate option:
+   - `None`
+   - `Let's Encrypt`
+   
 
-import { Callout } from 'fumadocs-ui/components/callout';
-
-<Callout>
-  **Note:** Set the container port to the port where your application is running.
-</Callout>
-
-
-Wait 20-30 seconds for Traefik to generate the certificate, after which you can access your application through your newly set domain.
-
-Go to any application and go to `Domains` tab and click on `Add Domain`, and simply type the record you created in the previous step.
-
-Give them 20-30 seconds to traefik generate the certificate and be able to access your application through your domain.
+For detailed instructions on setting up certificates, refer to the [Certificates](/docs/core/domain/certificates) documentation.
 
 
 <ImageZoom  src="/assets/images/application-domain-setup/app-setup-domain.png" width={800} height={630} quality={100} priority alt='home og image' className="rounded-lg" />
