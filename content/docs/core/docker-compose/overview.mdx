@@ -3,62 +3,47 @@ title: "Overview"
 description: "Learn how to use Docker Compose with Dokploy"
 ---
 
-We provide different ways to deploy applications using dokploy, but probably you want to deploy complex applications with multiples services, you an achieve this by using Docker Compose.
+Dokploy integrates with Docker Compose and Docker Stack to provide flexible deployment solutions. Whether you are developing locally or deploying at scale, Dokploy facilitates application management through these powerful Docker tools.
 
-Docker Compose is a tool for defining and running multi-container Docker applications. It allows you to define the services and their dependencies in a single file, and then use Docker to start and stop those services.
+### Configuration Methods
 
-## Overview
-
-Dokploy provides a easy way to deploy docker compose applications + traefik to balance the traffic to the application and redirect the requests to the right service.
-
-Dokploy includes 2 ways to create docker compose:
-
-- **Docker Compose**: Standard Docker Compose configurations.
-- **Stack**: This method is oriented towards orchestrating applications with Docker Swarm. Some features of Docker Compose, such as build, are not available.
+Dokploy provides two methods for creating Docker Compose configurations:
 
 
-Dokploy offers 3 different ways to deploy docker compose applications:
+- **Docker Compose**: Ideal for standard Docker Compose configurations.
+- **Stack**: Geared towards orchestrating applications using Docker Swarm. Note that some Docker Compose features, such as `build`, are not available in this mode.
 
-- **Github**: Trigger a deployment from a selected GitHub repository by specifying the Docker Compose file path
-- **Git**: Trigger a deployment from a Git repository (Gitea, GitHub, GitLab, Bitbucket) by specifying the Docker Compose file path.
-- **Raw**: Paste a Docker Compose file directly into the code editor and trigger a deployment.
+### General
+
+Configure the source of your code, the way your application is built, and also manage actions like deploying, updating, and deleting your application, and stopping it.
 
 ### Enviroment
 
-We provide a code editor to specify environment variables for your Docker Compose file. By default, it will create a .env file where you specified the route of your Docker Compose file.
-
+A code editor within Dokploy allows you to specify environment variables for your Docker Compose file. By default, Dokploy creates a `.env` file in the specified Docker Compose file path.
 
 ###  Monitoring
 
-We provide a monitoring tool that allows you to monitor each service individually. For example, if you have 10 services, you can monitor each service separately.
+Monitor each service individually within Dokploy. If your application consists of multiple services, each can be monitored separately to ensure optimal performance.
 
 ### Logs
 
-We provide a log viewer that allows you to view the logs of each service individually.
+Access detailed logs for each service through the Dokploy log viewer, which can help in troubleshooting and ensuring the stability of your services.
 
 
 ### Deployments
 
-You can see the last 10 logs of the build of your Compose file.
+You can view the last 10 deployments of your application. When you deploy your application in real time, a new deployment record will be created and it will gradually show you how your application is being built.
+
+We also offer a button to cancel deployments that are in queue. Note that those in progress cannot be canceled.
+
+We provide a webhook so that you can trigger your own deployments by pushing to your GitHub, Gitea, GitLab, Bitbucket repository.
 
 
 ### Advanced
 
-1. Command: Dokploy has a defined command to run the Docker Compose file, ensuring complete control through the UI. However, you can append flags or options to the command.
-2. Volumes: We provide a way to create files and folders on the server when you deploy your application. Every time you deploy an application, it will recreate the files with the specified content.
+This section provides advanced configuration options for experienced users. It includes tools for custom commands within the container and volumes.
+
+- **Command**: Dokploy has a defined command to run the Docker Compose file, ensuring complete control through the UI. However, you can append flags or options to the command.
+- **Volumes**: To ensure data persistence across deployments, configure storage volumes for your application.
 
 <ImageZoom  src="/assets/images/compose/overview.png" width={800} height={630} quality={100} priority alt='home og image' className="rounded-lg" />
-
-
-
-## Auto Deploy
-
-Set up automatic deployments:
-
-1. Navigate to the `deployments` tab and copy the `Webhook URL`.
-2. In your Git repository settings, paste this URL into the Webhook URL field.
-3. Make sure to select content type `application/json`.
-4. Choose the events that should trigger deployments, such as `Push`.
-5. Once configured, any specified action, like pushing a new commit, will automatically trigger a deployment.
-
-Dokploy supports webhooks from GitHub, GitLab, Bitbucket, Gitea.

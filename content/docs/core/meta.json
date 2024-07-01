@@ -37,6 +37,7 @@
         "databases/connection",
         "---Docker Compose---",
         "docker-compose/overview",
+        "docker-compose/providers",
         "docker-compose/example",
         "docker-compose/templates",
         "---Templates---",
