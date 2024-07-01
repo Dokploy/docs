@@ -43,6 +43,20 @@
         "docker-compose/templates",
         "---Templates---",
         "templates/overview",
+        "---Examples---",
+        "examples/nextjs",
+        "examples/vuejs",
+        "examples/vite-react",
+        "examples/nestjs",
+        "examples/svelte",
+        "examples/remix",
+        "examples/qwik",
+        "examples/preact",
+        "examples/solidjs",
+        "examples/astro",
+        "examples/astro-ssr",
+        "examples/go-fiber",
+        "examples/lit",
         "---Traefik---",
         "traefik/overview",
         "---Docker---",
@@ -54,7 +68,9 @@
         "---Deployments---",
         "deployments/oracle-cloud",
         "---Extra---",
-        "extra/comparison"
+        "extra/comparison",
+        "---Troubleshooting---",
+        "troubleshooting/overview"
     ]
   }
   
