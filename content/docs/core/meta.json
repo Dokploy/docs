@@ -38,6 +38,7 @@
         "---Docker Compose---",
         "docker-compose/overview",
         "docker-compose/providers",
+        "docker-compose/auto-deploy",
         "docker-compose/example",
         "docker-compose/templates",
         "---Templates---",
