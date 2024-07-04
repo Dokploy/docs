@@ -4,20 +4,9 @@ import { getPages } from "./source";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 	return [
-		{
-			url: url("/"),
-			lastModified: new Date(),
-			priority: 1,
-			alternates: {
-				languages: {
-					zh: `${url("/")}cn`,
-					en: `${url("/")}en`,
-				},
-			},
-		},
 		...getPages().map<MetadataRoute.Sitemap[number]>((page) => {
 			return {
-				url: url(page.url),
+				url: url(`/en${page.url}`),
 				alternates: {
 					languages: {
 						zh: `${url("/")}cn${page.url}`,
@@ -28,7 +17,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 					? new Date(page.data.exports.lastModified)
 					: undefined,
 				changeFrequency: "weekly",
-				priority: 0.8,
+				priority: page.url === "/docs/core/get-started/introduction" ? 1 : 0.8,
 			};
 		}),
 	];
