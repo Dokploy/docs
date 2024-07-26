@@ -25,7 +25,7 @@
       "---容器编排---",
       "docker-compose/overview",
       "docker-compose/example",
-      "docker-compose/templates",
+      "docker-compose/auto-deploy",
       "---模板---",
       "templates/overview",
       "--- traefik---",
