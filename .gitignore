@@ -12,6 +12,9 @@
 /build
 *.tsbuildinfo
 
+# bun
+bun.lockb
+
 # misc
 .DS_Store
 *.pem
@@ -20,6 +23,8 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.idea/*
+.idea
 
 # others
 .env*.local
